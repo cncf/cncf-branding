@@ -1,29 +1,42 @@
 - tag: buildpacks
   name: Buildpacks
+  site: https://buildpacks.io
 - tag: cloudevents
   name: CloudEvents
+  site: https://cloudevents.io
 - tag: cni
   name: Container Network Interface
+  site: https://github.com/containernetworking/cni
 - tag: containerd
   name: containerd
+  site: https://containerd.io
 - tag: coredns
   name: CoreDNS
+  site: https://coredns.io
 - tag: cortex
   name: Cortex
+  site: https://github.com/cortexproject/cortex
 - tag: dragonfly
   name: Dragonfly
+  site: https://d7y.io/en-us/
 - tag: envoy
   name: Envoy
+  site: https://envoyproxy.io
 - tag: etcd
   name: etcd
+  site: https://etcd.io
 - tag: falco
   name: Falco
+  site: https://falcosecurity.org
 - tag: fluentd
   name: Fluentd
+  site: https://fluentd.org
 - tag: grpc
   name: gRPC
+  site: https://grpc.io
 - tag: harbor
   name: Harbor
+  site: https://goharbor.io
 - tag: helm
   name: Helm
   site: https://helm.sh
