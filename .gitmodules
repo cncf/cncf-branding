@@ -1,0 +1,3 @@
+[submodule "static/img"]
+	path = static/img
+	url = https://github.com/cncf/artwork
