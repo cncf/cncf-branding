@@ -1,2 +1,15 @@
 title = "CNCF Branding"
 disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+fontAwesomeVersion = "5.3.1"
+sansSerifFont = "Lato"
+monospaceFont = "Fira Mono"
+
+[[params.fonts]]
+name = "Lato"
+sizes = [300, 400, 600, 700]
+
+[[params.fonts]]
+name = "Fira Mono"
+sizes = [300, 400, 600, 700]
