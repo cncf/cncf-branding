@@ -26,37 +26,55 @@
   name: Harbor
 - tag: helm
   name: Helm
+  site: https://helm.sh
 - tag: jaeger
   name: Jaeger
+  site: https://jaegertracing.io
 - tag: kubernetes
   name: Kubernetes
+  site: https://kubernetes.io
 - tag: linkerd
   name: Linkerd
+  site: https://linkerd.io
 - tag: nats
   name: NATS
+  site: https://nats.io
 - tag: notary
   name: Notary
+  site: https://github.com/theupdateframework/notary
 - tag: opa
   name: Open Policy Agent
+  site: https://openpolicyagent.org
 - tag: openmetrics
   name: OpenMetrics
+  site: https://openmetrics.io
 - tag: prometheus
   name: Prometheus
+  site: https://prometheus.io
 - tag: rkt
   name: rkt
+  site: https://github.com/rkt/rkt
 - tag: rook
   name: Rook
+  site: https://rook.io
 - tag: spiffe
   name: SPIFFE
+  site: https://spiffe.io
 - tag: spire
   name: SPIRE
+  site: https://spiffe.io/spire
 - tag: telepresence
   name: Telepresence
+  site: https://www.telepresence.io/
 - tag: tikv
   name: TiKV
+  site: https://tikv.org
 - tag: tuf
   name: The Update Framework
+  site: https://theupdateframework.github.io/
 - tag: virtualkubelet
   name: Virtual Kubelet
+  site: https://virtual-kubelet.io/
 - tag: vitess
   name: Vitess
+  site: https://vitess.io
