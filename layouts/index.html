@@ -16,48 +16,13 @@
       Projects
     </p>
 
-    {{ range $projects }}
-    {{ $hasStacked := ne .tag "grpc" }}
-    <div class="card">
-      <div class="card-content">
-        <p class="title is-size-4 is-size-5-mobile">
-          {{ .name }}
-        </p>
-
-        <p>
-          Horizontal
-        </p>
-
-        <div class="logos">
-          <img class="logo" src="/img/{{ .tag }}/horizontal/color/{{ .tag }}-horizontal-color.png">
-          <img class="logo" src="/img/{{ .tag }}/horizontal/black/{{ .tag }}-horizontal-black.png">
-          <img class="logo white" src="/img/{{ .tag }}/horizontal/white/{{ .tag }}-horizontal-white.png">
-        </div>
-
-        {{ if $hasStacked }}
-        <p>
-          Stacked
-        </p>
-
-        <div class="logos">
-          <img class="logo" src="/img/{{ .tag }}/stacked/color/{{ .tag }}-stacked-color.png">
-          <img class="logo" src="/img/{{ .tag }}/stacked/black/{{ .tag }}-stacked-black.png">
-          <img class="logo white" src="/img/{{ .tag }}/stacked/white/{{ .tag }}-stacked-white.png">
-        </div>
-        {{ end }}
-
-        <p>
-          Icon
-        </p>
-
-        <div class="logos">
-          <img class="logo" src="/img/{{ .tag }}/icon/color/{{ .tag }}-icon-color.png">
-          <img class="logo" src="/img/{{ .tag }}/icon/black/{{ .tag }}-icon-black.png">
-          <img class="logo white" src="/img/{{ .tag }}/icon/white/{{ .tag }}-icon-white.png">
-        </div>
+    <div class="columns is-multiline">
+      {{ range $projects }}
+      <div class="column is-half">
+        {{ partial "project.html" . }}
       </div>
+      {{ end }}
     </div>
-    {{ end }}
   </div>
 </section>
 {{ end }}

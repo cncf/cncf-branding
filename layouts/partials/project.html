@@ -1,0 +1,78 @@
+{{ $hasStacked := ne .tag "grpc" }}
+<div class="card">
+  <div class="card-content">
+    <p class="title is-size-4 is-size-5-mobile">
+      {{ .name }}
+    </p>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>
+          </th>
+          <th>
+            Horizontal
+          </th>
+          {{ if $hasStacked }}
+          <th>
+            Stacked
+          </th>
+          {{ end }}
+          <th>
+            Icon
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Color
+          </td>
+          <td>
+            <img class="logo" src="/img/{{ .tag }}/horizontal/color/{{ .tag }}-horizontal-color.png">
+          </td>
+          {{ if $hasStacked }}
+          <td>
+            <img class="logo" src="/img/{{ .tag }}/stacked/color/{{ .tag }}-stacked-color.png">
+          </td>
+          {{ end }}
+          <td>
+            <img class="logo" src="/img/{{ .tag }}/icon/color/{{ .tag }}-icon-color.png">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Black
+          </td>
+          <td>
+            <img class="logo" src="/img/{{ .tag }}/horizontal/black/{{ .tag }}-horizontal-black.png">
+          </td>
+          {{ if $hasStacked }}
+          <td>
+            <img class="logo" src="/img/{{ .tag }}/stacked/black/{{ .tag }}-stacked-black.png">
+          </td>
+          {{ end }}
+          <td>
+            <img class="logo" src="/img/{{ .tag }}/icon/black/{{ .tag }}-icon-black.png">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            White
+          </td>
+          <td class="dark-bg">
+            <img class="logo" src="/img/{{ .tag }}/horizontal/white/{{ .tag }}-horizontal-white.png">
+          </td>
+          {{ if $hasStacked }}
+          <td class="dark-bg">
+            <img class="logo" src="/img/{{ .tag }}/stacked/white/{{ .tag }}-stacked-white.png">
+          </td>
+          {{ end }}
+          <td class="dark-bg">
+            <img class="logo" src="/img/{{ .tag }}/icon/white/{{ .tag }}-icon-white.png">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
