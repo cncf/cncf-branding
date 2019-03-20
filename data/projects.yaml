@@ -1,3 +1,6 @@
+- tag: brigade
+  name: Brigade
+  site: https://brigade.sh
 - tag: buildpacks
   name: Buildpacks
   site: https://buildpacks.io
