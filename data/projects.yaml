@@ -46,6 +46,9 @@
 - tag: jaeger
   name: Jaeger
   site: https://jaegertracing.io
+- tag: kubeedge
+  name: KubeEdge
+  site: https://kubeedge.io
 - tag: kubernetes
   name: Kubernetes
   site: https://kubernetes.io
