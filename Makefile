@@ -1,7 +1,7 @@
 load:
 	git submodule foreach git pull origin master
 
-serve:
+serve: load
 	hugo server \
 		--buildDrafts \
 		--buildFuture \
