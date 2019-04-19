@@ -19,6 +19,9 @@
 - tag: cortex
   name: Cortex
   site: https://github.com/cortexproject/cortex
+- tag: crio
+  name: CRI-O
+  site: https://cri-o.io/
 - tag: dragonfly
   name: Dragonfly
   site: https://d7y.io/en-us/
@@ -67,6 +70,9 @@
 - tag: openmetrics
   name: OpenMetrics
   site: https://openmetrics.io
+- tag: opentracing
+  name: OpenTracing
+  site: https://opentracing.io
 - tag: prometheus
   name: Prometheus
   site: https://prometheus.io
