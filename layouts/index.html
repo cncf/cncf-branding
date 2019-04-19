@@ -1,32 +1,4 @@
 {{ define "main" }}
-{{ $projects := site.Data.projects }}
-<section class="hero is-primary">
-  <div class="hero-body">
-    <div class="container">
-      <p class="title is-size-1 is-size-2-mobile has-text-weight-light">
-        {{ site.Title }}
-      </p>
-
-      <p class="subtitle is-size-2 is-size-3-mobile has-text-weight-light">
-        View and download logos from every CNCF project
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <p class="title is-size-2 is-size-3-mobile has-text-weight-light">
-      Projects
-    </p>
-
-    <div class="columns is-multiline">
-      {{ range $projects }}
-      <div class="column is-half">
-        {{ partial "project.html" . }}
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
+{{ partial "home/hero.html" . }}
+{{ partial "home/main.html" . }}
 {{ end }}

@@ -2,10 +2,13 @@
 {{ $ch         := printf "/img/%s/horizontal/color/%s-horizontal-color.png" .tag .tag | relURL }}
 {{ $cs         := printf "/img/%s/stacked/color/%s-stacked-color.png" .tag .tag | relURL }}
 {{ $ci         := printf "/img/%s/icon/color/%s-icon-color.png" .tag .tag | relURL }}
+{{ $link       := printf "projects/%s" .tag | relURL }}
 <div class="card">
   <div class="card-content">
-    <p class="title is-size-4 is-size-5-mobile">
-      {{ .name }}
+    <p class="title is-size-4 is-size-5-mobile is-spaced">
+      <a href="{{ $link }}">
+        {{ .name }}
+      </a>
     </p>
 
     <a href="{{ .site }}" target="_blank">

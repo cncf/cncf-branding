@@ -1,16 +1,21 @@
+generate-pages:
+	ruby scripts/generate-pages.rb
+
 load:
 	git submodule foreach git pull origin master
 
-serve: load
+setup: generate-pages load
+
+serve: setup
 	hugo server \
 		--buildDrafts \
 		--buildFuture \
 		--disableFastRender
 
-production-build: load
+production-build: setup
 	hugo
 
-preview-build: load
+preview-build: setup
 	hugo \
 		--baseURL $(DEPLOY_PRIME_URL) \
 		--buildDrafts \
