@@ -1,105 +1,206 @@
 - tag: brigade
   name: Brigade
   site: https://brigade.sh
+  colors:
+    primary: '477495'
+    secondary: f98b97
 - tag: buildpacks
   name: Buildpacks
   site: https://buildpacks.io
+  colors:
+    primary: 47529d
+    secondary: de156c
+    tertiary: '252960'
 - tag: cloudevents
   name: CloudEvents
   site: https://cloudevents.io
+  colors:
+    primary: 4dcef3
 - tag: cni
   name: Container Network Interface
   site: https://github.com/containernetworking/cni
+  colors:
+    primary: 00b0ad
+    secondary: 91d1c9
 - tag: containerd
   name: containerd
   site: https://containerd.io
+  colors:
+    primary: '575757'
 - tag: coredns
   name: CoreDNS
   site: https://coredns.io
+  colors:
+    primary: 2c256d
+    secondary: '623394'
 - tag: cortex
   name: Cortex
   site: https://github.com/cortexproject/cortex
+  colors:
+    primary: 3b697e
 - tag: crio
   name: CRI-O
   site: https://cri-o.io/
+  colors:
+    primary: '294172'
+    secondary: 3c6eb4
 - tag: dragonfly
   name: Dragonfly
   site: https://d7y.io/en-us/
+  colors:
+    primary: 4aba58
+    secondary: '898989'
 - tag: envoy
   name: Envoy
   site: https://envoyproxy.io
+  colors:
+    primary: d14a9b
+    secondary: d14a9b
+    tertiary: a53795
 - tag: etcd
   name: etcd
   site: https://etcd.io
+  colors:
+    primary: 419eda
 - tag: falco
   name: Falco
   site: https://falcosecurity.org
+  colors:
+    primary: 00b4c8
 - tag: fluentd
   name: Fluentd
   site: https://fluentd.org
+  colors:
+    primary: '354984'
+    secondary: 3061a4
+    tertiary: 589bd0
 - tag: grpc
   name: gRPC
   site: https://grpc.io
+  colors:
+    primary: 244c5a
+    secondary: 5ac5c5
 - tag: harbor
   name: Harbor
   site: https://goharbor.io
+  colors:
+    primary: 60b932
+    secondary: 4495d7
 - tag: helm
   name: Helm
   site: https://helm.sh
+  colors:
+    primary: 277a9f
 - tag: jaeger
   name: Jaeger
   site: https://jaegertracing.io
+  colors:
+    primary: 60d0e4
+    secondary: 638b18
+    tertiary: e1caa2
 - tag: kubeedge
   name: KubeEdge
   site: https://kubeedge.io
+  colors:
+    primary: 1c77c8
 - tag: kubernetes
   name: Kubernetes
   site: https://kubernetes.io
+  colors:
+    primary: 326ce5
 - tag: linkerd
   name: Linkerd
   site: https://linkerd.io
+  colors:
+    primary: 2beda7
+    secondary: 0592f5
 - tag: nats
   name: NATS
   site: https://nats.io
+  colors:
+    primary: 27aae1
+    secondary: 34a574
+    tertiary: 375c93
+    quaternary: 8dc63f
 - tag: notary
   name: Notary
   site: https://github.com/theupdateframework/notary
+  colors:
+    primary: '000000'
 - tag: opa
   name: Open Policy Agent
   site: https://openpolicyagent.org
+  colors:
+    primary: 7d9199
+    secondary: '566366'
+    tertiary: bfbfbf
 - tag: openmetrics
   name: OpenMetrics
   site: https://openmetrics.io
+  colors:
+    primary: c42227
+    secondary: '191919'
 - tag: opentracing
   name: OpenTracing
   site: https://opentracing.io
+  colors:
+    primary: 0979b9
+    secondary: 2592c0
 - tag: prometheus
   name: Prometheus
   site: https://prometheus.io
+  colors:
+    primary: e95224
 - tag: rkt
   name: rkt
   site: https://github.com/rkt/rkt
+  colors:
+    primary: 54a3da
+    secondary: f1616e
 - tag: rook
   name: Rook
   site: https://rook.io
+  colors:
+    primary: 0091bd
+    secondary: 546a79
 - tag: spiffe
   name: SPIFFE
   site: https://spiffe.io
+  colors:
+    primary: 04bdd9
+    secondary: bcd918
 - tag: spire
   name: SPIRE
   site: https://spiffe.io/spire
+  colors:
+    primary: 0eb0d2
+    secondary: 99ca3e
+    tertiary: 595a5c
 - tag: telepresence
   name: Telepresence
-  site: https://www.telepresence.io/
+  site: https://www.telepresence.io
+  colors:
+    primary: cf0019
+    secondary: f5a623
 - tag: tikv
   name: TiKV
   site: https://tikv.org
+  colors:
+    primary: ec1a3b
+    secondary: '353558'
 - tag: tuf
   name: The Update Framework
   site: https://theupdateframework.github.io/
+  colors:
+    primary: 0082ca
 - tag: virtualkubelet
   name: Virtual Kubelet
   site: https://virtual-kubelet.io/
+  colors:
+    primary: 3a6ede
+    secondary: 383d49
 - tag: vitess
   name: Vitess
   site: https://vitess.io
+  colors:
+    primary: f16728
