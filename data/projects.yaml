@@ -16,45 +16,53 @@
 - tag: cloudevents
   name: CloudEvents
   site: https://cloudevents.io
+  description: A specification for describing event data in a common way
   colors:
     primary: 4dcef3
 - tag: cni
   name: Container Network Interface
   site: https://github.com/containernetworking/cni
+  description: A specification and libraries for writing plugins to configure network interfaces in Linux containers
   colors:
     primary: 00b0ad
     secondary: 91d1c9
 - tag: containerd
   name: containerd
   site: https://containerd.io
+  description: An industry-standard container runtime with an emphasis on simplicity, robustness and portability
   colors:
     primary: '575757'
 - tag: coredns
   name: CoreDNS
   site: https://coredns.io
+  description: A DNS server that operates via chained plugins
   colors:
     primary: 2c256d
     secondary: '623394'
 - tag: cortex
   name: Cortex
   site: https://github.com/cortexproject/cortex
+  description: A multitenant, horizontally scalable Prometheus as a Service
   colors:
     primary: 3b697e
 - tag: crio
   name: CRI-O
-  site: https://cri-o.io/
+  site: https://cri-o.io
+  description: OCI-based implementation of the Kubernetes Container Runtime Interface
   colors:
     primary: '294172'
     secondary: 3c6eb4
 - tag: dragonfly
   name: Dragonfly
-  site: https://d7y.io/en-us/
+  site: https://d7y.io/en-us
+  description: An intelligent P2P-based image and file distribution system
   colors:
     primary: 4aba58
     secondary: '898989'
 - tag: envoy
   name: Envoy
   site: https://envoyproxy.io
+  description: Cloud-native high-performance edge/middle/service proxy
   colors:
     primary: d14a9b
     secondary: d14a9b
@@ -62,16 +70,19 @@
 - tag: etcd
   name: etcd
   site: https://etcd.io
+  description: Distributed, reliable key-value store for the most critical data of a distributed system
   colors:
     primary: 419eda
 - tag: falco
   name: Falco
   site: https://falcosecurity.org
+  description: Container-native runtime security
   colors:
     primary: 00b4c8
 - tag: fluentd
   name: Fluentd
   site: https://fluentd.org
+  description: Unified logging layer
   colors:
     primary: '354984'
     secondary: 3061a4
@@ -79,23 +90,27 @@
 - tag: grpc
   name: gRPC
   site: https://grpc.io
+  description: A high-performance, open-source, universal RPC framework
   colors:
     primary: 244c5a
     secondary: 5ac5c5
 - tag: harbor
   name: Harbor
   site: https://goharbor.io
+  description: An open-source trusted cloud native registry project that stores, signs, and scans content
   colors:
     primary: 60b932
     secondary: 4495d7
 - tag: helm
   name: Helm
   site: https://helm.sh
+  description: The Kubernetes package manager
   colors:
     primary: 277a9f
 - tag: jaeger
   name: Jaeger
   site: https://jaegertracing.io
+  description: Open-source, end-to-end distributed tracing for monitoring and troubleshooting transactions in complex distributed systems
   colors:
     primary: 60d0e4
     secondary: 638b18
@@ -103,22 +118,26 @@
 - tag: kubeedge
   name: KubeEdge
   site: https://kubeedge.io
+  description: Kubernetes-native edge computing framework
   colors:
     primary: 1c77c8
 - tag: kubernetes
   name: Kubernetes
   site: https://kubernetes.io
+  description: An open-source system for automating deployment, scaling, and management of containerized applications
   colors:
     primary: 326ce5
 - tag: linkerd
   name: Linkerd
   site: https://linkerd.io
+  description: A service mesh for Kubernetes and beyond
   colors:
     primary: 2beda7
     secondary: 0592f5
 - tag: nats
   name: NATS
   site: https://nats.io
+  description: High-Performance server for NATS, the cloud native messaging system
   colors:
     primary: 27aae1
     secondary: 34a574
@@ -127,11 +146,13 @@
 - tag: notary
   name: Notary
   site: https://github.com/theupdateframework/notary
+  description: A project that allows anyone to have trust over arbitrary collections of data
   colors:
     primary: '000000'
 - tag: opa
   name: Open Policy Agent
   site: https://openpolicyagent.org
+  description: An open-source, general-purpose policy engine
   colors:
     primary: 7d9199
     secondary: '566366'
@@ -139,41 +160,48 @@
 - tag: openmetrics
   name: OpenMetrics
   site: https://openmetrics.io
+  description: Evolving the Prometheus exposition format into a standard
   colors:
     primary: c42227
     secondary: '191919'
 - tag: opentracing
   name: OpenTracing
   site: https://opentracing.io
+  description: Vendor-neutral APIs and instrumentation for distributed tracing
   colors:
     primary: 0979b9
     secondary: 2592c0
 - tag: prometheus
   name: Prometheus
   site: https://prometheus.io
+  description: Monitoring system and time series database
   colors:
     primary: e95224
 - tag: rkt
   name: rkt
   site: https://github.com/rkt/rkt
+  description: A pod-native container engine for Linux, composable, secure, and built on standards
   colors:
     primary: 54a3da
     secondary: f1616e
 - tag: rook
   name: Rook
   site: https://rook.io
+  description: Storage orchestration for Kubernetes
   colors:
     primary: 0091bd
     secondary: 546a79
 - tag: spiffe
   name: SPIFFE
   site: https://spiffe.io
+  description: The Secure Production Identity Framework for Everyone
   colors:
     primary: 04bdd9
     secondary: bcd918
 - tag: spire
   name: SPIRE
   site: https://spiffe.io/spire
+  description: The SPIFFE Runtime Environment
   colors:
     primary: 0eb0d2
     secondary: 99ca3e
@@ -181,28 +209,33 @@
 - tag: telepresence
   name: Telepresence
   site: https://www.telepresence.io
+  description: Local development against a remote Kubernetes or OpenShift cluster
   colors:
     primary: cf0019
     secondary: f5a623
 - tag: tikv
   name: TiKV
   site: https://tikv.org
+  description: Distributed transactional key-value database, originally created to complement TiDB
   colors:
     primary: ec1a3b
     secondary: '353558'
 - tag: tuf
   name: The Update Framework
-  site: https://theupdateframework.github.io/
+  site: https://theupdateframework.github.io
+  description: A framework for securing software update systems
   colors:
     primary: 0082ca
 - tag: virtualkubelet
   name: Virtual Kubelet
-  site: https://virtual-kubelet.io/
+  site: https://virtual-kubelet.io
+  description: An open-source Kubernetes kubelet implementation that masquerades as a kubelet
   colors:
     primary: 3a6ede
     secondary: 383d49
 - tag: vitess
   name: Vitess
   site: https://vitess.io
+  description: A database clustering system for horizontal scaling of MySQL 
   colors:
     primary: f16728
