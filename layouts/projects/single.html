@@ -1,5 +1,11 @@
-{{ define "main" }}
+{{ define "title" }}
 {{ $tag     := .File.BaseFileName }}
+{{ $project    := index (where site.Data.projects ".tag" $tag) 0 }}
+{{ site.Title }} | {{ $project.name }}
+{{ end }}
+
+{{ define "main" }}
+{{ $tag        := .File.BaseFileName }}
 {{ $project    := index (where site.Data.projects ".tag" $tag) 0 }}
 {{ $colors     := $project.colors }}
 {{ $primary    := $colors.primary }}
