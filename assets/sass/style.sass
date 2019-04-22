@@ -26,18 +26,21 @@ $slack-green: #74cdb0
 $family-sans-serif: "{{ $sansSerifFont }}", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 $family-code: "{{ $monospaceFont }}", monospace
 $primary: $cncf-dark-blue
+$section-padding: 0 1.5rem
 
 @import "bulma/sass/utilities/derived-variables"
 @import "bulma/bulma"
 
-.card
-  margin-bottom: 1rem
+.article
+  padding-bottom: 5rem
 
-.logo-table
-  width: 100%
+.project-card
+  border: 2px solid $grey-light
+  padding: 1rem
+  display: flex
+  flex-direction: row
+  align-items: center
 
-  .logo
-    max-height: 3rem
-
-  td.dark-bg
-    background-color: black
+  .text
+    margin-left: 2rem
+    color: $dark

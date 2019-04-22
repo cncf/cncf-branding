@@ -1,6 +1,7 @@
 - tag: brigade
   name: Brigade
   site: https://brigade.sh
+  description: Event-based scripting for Kubernetes
   colors:
     primary: '477495'
     secondary: f98b97

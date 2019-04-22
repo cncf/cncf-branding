@@ -1,96 +1,22 @@
 {{ $hasStacked := ne .tag "grpc" }}
-{{ $ch         := printf "/img/%s/horizontal/color/%s-horizontal-color.png" .tag .tag | relURL }}
-{{ $cs         := printf "/img/%s/stacked/color/%s-stacked-color.png" .tag .tag | relURL }}
-{{ $ci         := printf "/img/%s/icon/color/%s-icon-color.png" .tag .tag | relURL }}
+{{ $icon       := printf "/img/%s/icon/color/%s-icon-color.png" .tag .tag | relURL }}
 {{ $link       := printf "projects/%s" .tag | relURL }}
-<div class="card">
-  <div class="card-content">
-    <p class="title is-size-4 is-size-5-mobile is-spaced">
-      <a href="{{ $link }}">
+<a href="{{ $link }}">
+  <div class="project-card">
+    <div class="image is-64x64">
+      <img src="{{ $icon }}">
+    </div>
+
+    <div class="text">
+      <p class="is-size-4">
         {{ .name }}
-      </a>
-    </p>
+      </p>
 
-    <a href="{{ .site }}" target="_blank">
-      {{ .site }}
-    </a>
-
-    <hr />
-
-    <table class="table logo-table">
-      <thead>
-        <tr>
-          <th>
-          </th>
-          <th>
-            Horizontal
-          </th>
-          {{ if $hasStacked }}
-          <th>
-            Stacked
-          </th>
-          {{ end }}
-          <th>
-            Icon
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="type">
-            Color
-          </td>
-          <td class="horizontal">
-            <a href="{{ $ch }}" download>
-              <img class="logo" src="{{ $ch }}">
-            </a>
-          </td>
-          {{ if $hasStacked }}
-          <td class="stacked">
-            <a href="{{ $cs }}" download>
-              <img class="logo" src="{{ $cs }}">
-            </a>
-          </td>
-          {{ end }}
-          <td class="ico">
-            <a href="{{ $ci }}" download>
-              <img class="logo" src="{{ $ci }}">
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td class="type">
-            Black
-          </td>
-          <td class="horizontal">
-            <img class="logo" src="/img/{{ .tag }}/horizontal/black/{{ .tag }}-horizontal-black.png">
-          </td>
-          {{ if $hasStacked }}
-          <td class="stacked">
-            <img class="logo" src="/img/{{ .tag }}/stacked/black/{{ .tag }}-stacked-black.png">
-          </td>
-          {{ end }}
-          <td class="ico">
-            <img class="logo" src="/img/{{ .tag }}/icon/black/{{ .tag }}-icon-black.png">
-          </td>
-        </tr>
-        <tr>
-          <td class="type">
-            White
-          </td>
-          <td class="dark-bg horizontal">
-            <img class="logo" src="/img/{{ .tag }}/horizontal/white/{{ .tag }}-horizontal-white.png">
-          </td>
-          {{ if $hasStacked }}
-          <td class="dark-bg stacked">
-            <img class="logo" src="/img/{{ .tag }}/stacked/white/{{ .tag }}-stacked-white.png">
-          </td>
-          {{ end }}
-          <td class="dark-bg ico">
-            <img class="logo" src="/img/{{ .tag }}/icon/white/{{ .tag }}-icon-white.png">
-          </td>
-        </tr>
-      </tbody>
-    </table>
+      {{ with .description }}
+      <p class="description has-text-grey">
+        {{ . | markdownify }}
+      </p>
+      {{ end }}
+    </div>
   </div>
-</div>
+</a>

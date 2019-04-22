@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $tag     := .File.BaseFileName }}
 {{ $project := index (where site.Data.projects ".tag" $tag) 0 }}
-{{ partial "projects/hero.html" . }}
+{{ partial "hero.html" . }}
 
 <section class="section">
   <div class="container">

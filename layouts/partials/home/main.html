@@ -1,18 +1,13 @@
 {{ $projects := site.Data.projects }}
 <section class="section">
   <div class="container">
-    <p class="title is-size-2 is-size-3-mobile has-text-weight-light">
-      Projects
-    </p>
-
-    <!--
     <div class="columns is-multiline">
       {{ range $projects }}
-      <div class="column is-half">
+      <div class="column is-one-third">
         {{ partial "project.html" . }}
       </div>
       {{ end }}
     </div>
-    -->
   </div>
 </section>
+

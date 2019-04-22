@@ -2,7 +2,7 @@ title = "CNCF Branding"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
-description = "View and download logos from every CNCF project"
+description = "Colors and logos from every CNCF project"
 fontAwesomeVersion = "5.3.1"
 sansSerifFont = "Lato"
 monospaceFont = "Fira Mono"
