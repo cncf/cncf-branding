@@ -6,6 +6,9 @@
 {{ $secondary  := $colors.secondary }}
 {{ $tertiary   := $colors.tertiary }}
 {{ $quaternary := $colors.quaternary }}
+{{ $types      := (slice "horizontal" "icon" "stacked") }}
+{{ $colors     := (slice "color" "black" "white") }}
+
 {{ $hc         := printf "img/%s/horizontal/color/%s-horizontal-color.png" $tag $tag | relURL }}
 {{ $ic         := printf "img/%s/icon/color/%s-icon-color.png" $tag $tag | relURL }}
 {{ $sc         := printf "img/%s/stacked/color/%s-stacked-color.png" $tag $tag | relURL }}
@@ -41,23 +44,26 @@
         </h1>
   
         <hr />
-  
-        <div class="logo-panels">
-          {{ partial "logo-panel-section.html" (dict "title" "Horizontal color" "img" $hc "class" "horizontal") }}
-          {{ partial "logo-panel-section.html" (dict "title" "Icon color" "img" $ic "class" "icon") }}
-          {{ partial "logo-panel-section.html" (dict "title" "Stacked color" "img" $sc "class" "stacked") }}
-        </div>
-  
-        <div class="logo-panels">
-          {{ partial "logo-panel-section.html" (dict "title" "Horizontal black" "img" $hb "class" "horizontal") }}
-          {{ partial "logo-panel-section.html" (dict "title" "Icon black" "img" $ib "class" "icon") }}
-          {{ partial "logo-panel-section.html" (dict "title" "Stacked black" "img" $sb "class" "stacked") }}
-        </div>
-  
-        <div class="logo-panels">
-          {{ partial "logo-panel-section.html" (dict "title" "Horizontal white" "img" $hw "class" "horizontal white") }}
-          {{ partial "logo-panel-section.html" (dict "title" "Icon white" "img" $iw "class" "icon white") }}
-          {{ partial "logo-panel-section.html" (dict "title" "Stacked white" "img" $sw "class" "stacked white") }}
+
+        <div class="columns is-multiline">
+          {{ range $types }}
+          {{ $type := . }}
+          {{ range $colors }}
+          {{ $color := . }}
+          {{ $img := printf "img/%s/%s/%s/%s-%s-%s.png" $tag $type $color $tag $type $color | relURL }}
+          {{ $url := printf "https://raw.githubusercontent.com/cncf/artwork/master/%s/%s/%s/%s-%s-%s.png" $tag $type $color $tag $type $color | relURL }}
+          {{ $isWhite := eq $color "white" }}
+          <div class="column is-one-third logo-column">
+            <h3 class="has-text-weight-light logo-column-title">
+              {{ $type | humanize }} {{ $color }}
+            </h3>
+
+            <a href="{{ $url }}" download="{{ $url }}">
+              <img class="logo {{ $type }} {{ $color }}" src="{{ $img }}">
+            </a>
+          </div>
+          {{ end }}
+          {{ end }}
         </div>
       </div>
     </div>
