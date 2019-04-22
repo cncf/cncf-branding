@@ -1,0 +1,20 @@
+{{ $description := .description | markdownify }}
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <p class="title is-size-1 is-size-2-mobile has-text-weight-bold is-spaced">
+        {{ .name }}
+      </p>
+
+      {{ with $description }}
+      <p class="subtitle is-size-2 is-size-3-mobile has-text-weight-light">
+        {{ . }}
+      </p>
+      {{ end }}
+
+      <a class="subtitle is-size-5 is-size-6-mobile has-text-grey" href="{{ .site }}" target="_blank">
+        {{ .site }}
+      </a>
+    </div>
+  </div>
+</section>

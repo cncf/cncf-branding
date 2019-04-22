@@ -31,16 +31,77 @@ $section-padding: 0 1.5rem
 @import "bulma/sass/utilities/derived-variables"
 @import "bulma/bulma"
 
+=row
+  display: flex
+  flex-direction: row
+
 .article
   padding-bottom: 5rem
 
 .project-card
-  border: 2px solid $grey-light
-  padding: 1rem
-  display: flex
-  flex-direction: row
+  +row
+  border: 2px solid $grey-lighter
+  padding: 1.2rem
   align-items: center
 
   .text
     margin-left: 2rem
     color: $dark
+
+    .project-card-title
+      line-height: 120%
+      font-weight: 600
+
+    .description
+      font-size: 1rem
+      margin-top: .5rem
+
+.color-panels
+  +row
+  flex-wrap: nowrap
+  overflow-x: scroll
+
+  .color-panel-section
+    & + .color-panel-section
+      margin-left: 2rem
+    
+    .color-panel-title
+      font-size: 1.25rem
+
+    .color-panel
+      height: 5rem
+      width: 5rem
+
+    .hex
+      margin-top: .5rem
+      font-size: .9rem
+      font-weight: 700
+      color: $dark
+
+.logo-panels
+  +row
+
+  & + .logo-panels
+    margin-top: 1rem
+
+  .logo-panel
+    display: flex
+    flex-direction: column
+    align-items: center
+    border: 1px solid $grey-lighter
+    padding: 1rem
+    width: 20rem
+
+    &-title
+      margin-bottom: 2rem
+
+    & + .logo-panel
+      margin-left: 1rem
+
+  .logo
+    &.white
+      padding: .5rem
+      background-color: black
+    
+    &.stacked
+      max-width: 50%

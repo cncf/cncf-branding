@@ -1,13 +1,15 @@
 {{ $projects := site.Data.projects }}
-<section class="section">
-  <div class="container">
-    <div class="columns is-multiline">
-      {{ range $projects }}
-      <div class="column is-one-third">
-        {{ partial "project.html" . }}
+<article class="article">
+  <section class="section">
+    <div class="container">
+      <div class="columns is-multiline">
+        {{ range $projects }}
+        <div class="column is-one-third">
+          {{ partial "home/project-card.html" . }}
+        </div>
+        {{ end }}
       </div>
-      {{ end }}
     </div>
-  </div>
-</section>
+  </section>
+</article>
 

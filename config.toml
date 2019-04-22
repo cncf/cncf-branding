@@ -1,16 +1,11 @@
 title = "CNCF Branding"
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["section", "taxonomy", "taxonomyTerm"]
 
 [params]
-description = "Colors and logos from every CNCF project"
+description = "Colors and logos for every CNCF project"
 fontAwesomeVersion = "5.3.1"
-sansSerifFont = "Lato"
-monospaceFont = "Fira Mono"
+sansSerifFont = "Open Sans"
 
 [[params.fonts]]
-name = "Lato"
-sizes = [300, 400, 600, 700]
-
-[[params.fonts]]
-name = "Fira Mono"
+name = "Open Sans"
 sizes = [300, 400, 600, 700]

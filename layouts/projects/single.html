@@ -1,11 +1,66 @@
 {{ define "main" }}
 {{ $tag     := .File.BaseFileName }}
-{{ $project := index (where site.Data.projects ".tag" $tag) 0 }}
-{{ partial "hero.html" . }}
+{{ $project    := index (where site.Data.projects ".tag" $tag) 0 }}
+{{ $colors     := $project.colors }}
+{{ $primary    := $colors.primary }}
+{{ $secondary  := $colors.secondary }}
+{{ $tertiary   := $colors.tertiary }}
+{{ $quaternary := $colors.quaternary }}
+{{ $hc         := printf "img/%s/horizontal/color/%s-horizontal-color.png" $tag $tag | relURL }}
+{{ $ic         := printf "img/%s/icon/color/%s-icon-color.png" $tag $tag | relURL }}
+{{ $sc         := printf "img/%s/stacked/color/%s-stacked-color.png" $tag $tag | relURL }}
+{{ $hb         := printf "img/%s/horizontal/black/%s-horizontal-black.png" $tag $tag | relURL }}
+{{ $ib         := printf "img/%s/icon/black/%s-icon-black.png" $tag $tag | relURL }}
+{{ $sb         := printf "img/%s/stacked/black/%s-stacked-black.png" $tag $tag | relURL }}
+{{ $hw         := printf "img/%s/horizontal/white/%s-horizontal-white.png" $tag $tag | relURL }}
+{{ $iw         := printf "img/%s/icon/white/%s-icon-white.png" $tag $tag | relURL }}
+{{ $sw         := printf "img/%s/stacked/white/%s-stacked-white.png" $tag $tag | relURL }}
 
-<section class="section">
-  <div class="container">
-    {{ partial "project.html" $project }}
-  </div>
-</section>
+{{ partial "projects/hero.html" $project }}
+
+<article class="article">
+  <section class="section">
+    <div class="container">
+      <div class="content">
+        <h1 class="has-text-weight-light">
+          Colors
+        </h1>
+  
+        <hr />
+  
+        <div class="color-panels">
+          {{ partial "color-panel-section.html" (dict "title" "Primary" "color" $primary) }}
+  
+          {{ with $secondary }}
+          {{ partial "color-panel-section.html" (dict "title" "Secondary" "color" $secondary) }}
+          {{ end }}
+        </div>
+  
+        <h1 class="has-text-weight-light">
+          Logos
+        </h1>
+  
+        <hr />
+  
+        <div class="logo-panels">
+          {{ partial "logo-panel-section.html" (dict "title" "Horizontal color" "img" $hc "class" "horizontal") }}
+          {{ partial "logo-panel-section.html" (dict "title" "Icon color" "img" $ic "class" "icon") }}
+          {{ partial "logo-panel-section.html" (dict "title" "Stacked color" "img" $sc "class" "stacked") }}
+        </div>
+  
+        <div class="logo-panels">
+          {{ partial "logo-panel-section.html" (dict "title" "Horizontal black" "img" $hb "class" "horizontal") }}
+          {{ partial "logo-panel-section.html" (dict "title" "Icon black" "img" $ib "class" "icon") }}
+          {{ partial "logo-panel-section.html" (dict "title" "Stacked black" "img" $sb "class" "stacked") }}
+        </div>
+  
+        <div class="logo-panels">
+          {{ partial "logo-panel-section.html" (dict "title" "Horizontal white" "img" $hw "class" "horizontal white") }}
+          {{ partial "logo-panel-section.html" (dict "title" "Icon white" "img" $iw "class" "icon white") }}
+          {{ partial "logo-panel-section.html" (dict "title" "Stacked white" "img" $sw "class" "stacked white") }}
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
 {{ end }}

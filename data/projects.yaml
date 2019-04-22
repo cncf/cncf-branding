@@ -8,6 +8,7 @@
 - tag: buildpacks
   name: Buildpacks
   site: https://buildpacks.io
+  description: Pluggable, modular tools that translate source code into OCI images
   colors:
     primary: 47529d
     secondary: de156c
