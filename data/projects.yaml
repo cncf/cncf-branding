@@ -5,6 +5,7 @@
   colors:
     primary: '477495'
     secondary: f98b97
+    tertiary: b8e686
 - tag: buildpacks
   name: Buildpacks
   site: https://buildpacks.io
