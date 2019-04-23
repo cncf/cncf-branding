@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ $styleGuide := readFile "files/foundation/style-guide.md" | markdownify }}
+
+<article class="article style-guide">
+  <section class="section">
+    <div class="container">
+      <div class="content">
+        {{ $styleGuide }}
+      </div>
+    </div>
+  </section>
+</article>
+{{ end }}
