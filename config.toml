@@ -1,5 +1,6 @@
 title = "CNCF Branding"
 disableKinds = ["section", "taxonomy", "taxonomyTerm"]
+baseURL = "https://cncf-branding.netlify.com"
 
 [params]
 description = "Colors and logos for every CNCF project"
