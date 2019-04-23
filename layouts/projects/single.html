@@ -47,6 +47,10 @@
           {{ with $tertiary }}
           {{ partial "color-panel-section.html" (dict "title" "Tertiary" "color" $tertiary) }}
           {{ end }}
+
+          {{ with $quaternary }}
+          {{ partial "color-panel-section.html" (dict "title" "Quaternary" "color" $quaternary) }}
+          {{ end }}
         </div>
 
         <br /><br />
