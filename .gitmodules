@@ -1,3 +1,6 @@
 [submodule "static/img"]
 	path = static/img
 	url = https://github.com/cncf/artwork
+[submodule "files/foundation"]
+	path = files/foundation
+	url = https://github.com/cncf/foundation
