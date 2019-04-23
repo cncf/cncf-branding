@@ -57,21 +57,26 @@ $navbar-dropdown-arrow: $cncf-light-blue
       font-size: 1rem
       margin-top: .5rem
 
-.color-panels
+.color-panels  
   +row
   flex-wrap: nowrap
   overflow-x: scroll
 
   .color-panel-section
+    border: 2px solid rgb(245, 245, 245)
+    padding: 1rem 2rem
+
     & + .color-panel-section
-      margin-left: 2rem
+      margin-left: 1rem
     
     .color-panel-title
       font-size: 1.25rem
+      font-weight: 400
 
     .color-panel
-      height: 5rem
-      width: 5rem
+      margin: .75rem auto 0 auto
+      height: 8rem
+      width: 8rem
 
     .hex
       margin-top: .5rem
