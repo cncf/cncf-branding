@@ -32,6 +32,20 @@ $navbar-dropdown-arrow: $cncf-light-blue
 @import "bulma/sass/utilities/derived-variables"
 @import "bulma/bulma"
 
+.page
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+  .main
+    flex: 1
+
+.footer
+  background-color: $dark
+
+  p
+    color: $white
+
 =row
   display: flex
   flex-direction: row
@@ -63,7 +77,7 @@ $navbar-dropdown-arrow: $cncf-light-blue
   overflow-x: scroll
 
   .color-panel-section
-    border: 2px solid rgb(245, 245, 245)
+    border: 2px solid $grey-lighter
     padding: 1rem 2rem
 
     & + .color-panel-section
