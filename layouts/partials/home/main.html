@@ -1,9 +1,44 @@
 {{ $projects := site.Data.projects }}
+{{ $graduated  := where $projects ".status" "graduated" }}
+{{ $incubating := where $projects ".status" "incubating" }}
+{{ $sandbox    := where $projects ".status" "sandbox" }}
 <article class="article">
   <section class="section">
     <div class="container">
+      <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
+        Graduated
+      </p>
+
       <div class="columns is-multiline">
-        {{ range $projects }}
+        {{ range sort $graduated "weight" }}
+        <div class="column is-one-third">
+          {{ partial "home/project-card.html" . }}
+        </div>
+        {{ end }}
+      </div>
+
+      <br /><br />
+
+      <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
+        Incubating
+      </p>
+
+      <div class="columns is-multiline">
+        {{ range sort $incubating "weight" }}
+        <div class="column is-one-third">
+          {{ partial "home/project-card.html" . }}
+        </div>
+        {{ end }}
+      </div>
+
+      <br /><br />
+
+      <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
+        Sandbox
+      </p>
+
+      <div class="columns is-multiline">
+        {{ range sort $sandbox "weight" }}
         <div class="column is-one-third">
           {{ partial "home/project-card.html" . }}
         </div>

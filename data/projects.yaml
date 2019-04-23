@@ -1,5 +1,6 @@
 - tag: brigade
   name: Brigade
+  status: sandbox
   site: https://brigade.sh
   description: Event-based scripting for Kubernetes
   colors:
@@ -8,6 +9,7 @@
     tertiary: b8e686
 - tag: buildpacks
   name: Buildpacks
+  status: sandbox
   site: https://buildpacks.io
   description: Pluggable, modular tools that translate source code into OCI images
   colors:
@@ -16,12 +18,14 @@
     tertiary: '252960'
 - tag: cloudevents
   name: CloudEvents
+  status: sandbox
   site: https://cloudevents.io
   description: A specification for describing event data in a common way
   colors:
     primary: 4dcef3
 - tag: cni
   name: Container Network Interface
+  status: incubating
   site: https://github.com/containernetworking/cni
   description: A specification and libraries for writing plugins to configure network interfaces in Linux containers
   colors:
@@ -29,12 +33,16 @@
     secondary: 91d1c9
 - tag: containerd
   name: containerd
+  weight: 5
+  status: graduated
   site: https://containerd.io
   description: An industry-standard container runtime with an emphasis on simplicity, robustness and portability
   colors:
     primary: '575757'
 - tag: coredns
   name: CoreDNS
+  weight: 4
+  status: graduated
   site: https://coredns.io
   description: A DNS server that operates via chained plugins
   colors:
@@ -42,12 +50,14 @@
     secondary: '623394'
 - tag: cortex
   name: Cortex
+  status: sandbox
   site: https://github.com/cortexproject/cortex
   description: A multitenant, horizontally scalable Prometheus as a Service
   colors:
     primary: 3b697e
 - tag: crio
   name: CRI-O
+  status: incubating
   site: https://cri-o.io
   description: OCI-based implementation of the Kubernetes Container Runtime Interface
   colors:
@@ -55,6 +65,7 @@
     secondary: 3c6eb4
 - tag: dragonfly
   name: Dragonfly
+  status: sandbox
   site: https://d7y.io/en-us
   description: An intelligent P2P-based image and file distribution system
   colors:
@@ -62,6 +73,8 @@
     secondary: '898989'
 - tag: envoy
   name: Envoy
+  weight: 3
+  status: graduated
   site: https://envoyproxy.io
   description: Cloud-native high-performance edge/middle/service proxy
   colors:
@@ -70,18 +83,22 @@
     tertiary: a53795
 - tag: etcd
   name: etcd
+  status: incubating
   site: https://etcd.io
   description: Distributed, reliable key-value store for the most critical data of a distributed system
   colors:
     primary: 419eda
 - tag: falco
   name: Falco
+  status: sandbox
   site: https://falcosecurity.org
   description: Container-native runtime security
   colors:
     primary: 00b4c8
 - tag: fluentd
   name: Fluentd
+  weight: 6
+  status: graduated
   site: https://fluentd.org
   description: Unified logging layer
   colors:
@@ -90,6 +107,7 @@
     tertiary: 589bd0
 - tag: grpc
   name: gRPC
+  status: incubating
   site: https://grpc.io
   description: A high-performance, open-source, universal RPC framework
   colors:
@@ -97,6 +115,7 @@
     secondary: 5ac5c5
 - tag: harbor
   name: Harbor
+  status: incubating
   site: https://goharbor.io
   description: An open-source trusted cloud native registry project that stores, signs, and scans content
   colors:
@@ -104,12 +123,14 @@
     secondary: 4495d7
 - tag: helm
   name: Helm
+  status: incubating
   site: https://helm.sh
   description: The Kubernetes package manager
   colors:
     primary: 277a9f
 - tag: jaeger
   name: Jaeger
+  status: incubating
   site: https://jaegertracing.io
   description: Open-source, end-to-end distributed tracing for monitoring and troubleshooting transactions in complex distributed systems
   colors:
@@ -118,18 +139,22 @@
     tertiary: e1caa2
 - tag: kubeedge
   name: KubeEdge
+  status: sandbox
   site: https://kubeedge.io
   description: Kubernetes-native edge computing framework
   colors:
     primary: 1c77c8
 - tag: kubernetes
   name: Kubernetes
+  weight: 1
+  status: graduated
   site: https://kubernetes.io
   description: An open-source system for automating deployment, scaling, and management of containerized applications
   colors:
     primary: 326ce5
 - tag: linkerd
   name: Linkerd
+  status: incubating
   site: https://linkerd.io
   description: A service mesh for Kubernetes and beyond
   colors:
@@ -137,6 +162,7 @@
     secondary: 0592f5
 - tag: nats
   name: NATS
+  status: incubating
   site: https://nats.io
   description: High-Performance server for NATS, the cloud native messaging system
   colors:
@@ -146,12 +172,14 @@
     quaternary: 8dc63f
 - tag: notary
   name: Notary
+  status: incubating
   site: https://github.com/theupdateframework/notary
   description: A project that allows anyone to have trust over arbitrary collections of data
   colors:
     primary: '000000'
 - tag: opa
   name: Open Policy Agent
+  status: incubating
   site: https://openpolicyagent.org
   description: An open-source, general-purpose policy engine
   colors:
@@ -160,6 +188,7 @@
     tertiary: bfbfbf
 - tag: openmetrics
   name: OpenMetrics
+  status: sandbox
   site: https://openmetrics.io
   description: Evolving the Prometheus exposition format into a standard
   colors:
@@ -167,6 +196,7 @@
     secondary: '191919'
 - tag: opentracing
   name: OpenTracing
+  status: incubating
   site: https://opentracing.io
   description: Vendor-neutral APIs and instrumentation for distributed tracing
   colors:
@@ -174,12 +204,15 @@
     secondary: 2592c0
 - tag: prometheus
   name: Prometheus
+  weight: 2
+  status: graduated
   site: https://prometheus.io
   description: Monitoring system and time series database
   colors:
     primary: e95224
 - tag: rkt
   name: rkt
+  status: incubating
   site: https://github.com/rkt/rkt
   description: A pod-native container engine for Linux, composable, secure, and built on standards
   colors:
@@ -187,6 +220,7 @@
     secondary: f1616e
 - tag: rook
   name: Rook
+  status: incubating
   site: https://rook.io
   description: Storage orchestration for Kubernetes
   colors:
@@ -194,6 +228,7 @@
     secondary: 546a79
 - tag: spiffe
   name: SPIFFE
+  status: sandbox
   site: https://spiffe.io
   description: The Secure Production Identity Framework for Everyone
   colors:
@@ -201,6 +236,7 @@
     secondary: bcd918
 - tag: spire
   name: SPIRE
+  status: sandbox
   site: https://spiffe.io/spire
   description: The SPIFFE Runtime Environment
   colors:
@@ -209,6 +245,7 @@
     tertiary: 595a5c
 - tag: telepresence
   name: Telepresence
+  status: sandbox
   site: https://www.telepresence.io
   description: Local development against a remote Kubernetes or OpenShift cluster
   colors:
@@ -216,6 +253,7 @@
     secondary: f5a623
 - tag: tikv
   name: TiKV
+  status: sandbox
   site: https://tikv.org
   description: Distributed transactional key-value database, originally created to complement TiDB
   colors:
@@ -223,12 +261,14 @@
     secondary: '353558'
 - tag: tuf
   name: The Update Framework
+  status: incubating
   site: https://theupdateframework.github.io
   description: A framework for securing software update systems
   colors:
     primary: 0082ca
 - tag: virtualkubelet
   name: Virtual Kubelet
+  status: sandbox
   site: https://virtual-kubelet.io
   description: An open-source Kubernetes kubelet implementation that masquerades as a kubelet
   colors:
@@ -236,6 +276,7 @@
     secondary: 383d49
 - tag: vitess
   name: Vitess
+  status: incubating
   site: https://vitess.io
   description: A database clustering system for horizontal scaling of MySQL 
   colors:
