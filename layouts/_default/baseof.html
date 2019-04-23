@@ -1,3 +1,4 @@
+{{ $favicon := "favicon.png" | relURL }}
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,6 +9,7 @@
       {{ end }}
     </title>
     {{ partial "css.html" . }}
+    <link rel="shortcut icon" href="{{ $favicon }}">
   </head>
   <body class="has-navbar-fixed-top">
     {{ partial "navbar.html" . }}
