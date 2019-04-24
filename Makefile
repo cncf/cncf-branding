@@ -5,10 +5,10 @@ assets:
 generate-pages:
 	ruby scripts/generate-pages.rb
 
-load:
+submodule-update:
 	git submodule foreach git pull origin master
 
-setup: generate-pages load
+setup: generate-pages submodule-update
 
 serve: setup
 	hugo server \
