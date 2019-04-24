@@ -1,4 +1,4 @@
-{{ $icon       := printf "/img/%s/icon/color/%s-icon-color.png" .tag .tag | relURL }}
+{{ $icon       := printf "/img/projects/%s/icon/color/%s-icon-color.svg" .tag .tag | relURL }}
 {{ $link       := printf "projects/%s" .tag | relURL }}
 <a href="{{ $link }}">
   <div class="project-card">

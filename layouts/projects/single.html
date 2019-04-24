@@ -64,7 +64,7 @@
           {{ $type := . }}
           {{ range $colors }}
           {{ $color := . }}
-          {{ $img := printf "img/%s/%s/%s/%s-%s-%s.png" $tag $type $color $tag $type $color | relURL }}
+          {{ $img := printf "img/projects/%s/%s/%s/%s-%s-%s.png" $tag $type $color $tag $type $color | relURL }}
           {{ $url := printf "https://raw.githubusercontent.com/cncf/artwork/master/%s/%s/%s/%s-%s-%s.png" $tag $type $color $tag $type $color | relURL }}
           {{ $isWhite := eq $color "white" }}
           <div class="column is-one-third logo-column">
