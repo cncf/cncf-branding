@@ -1,11 +1,88 @@
 {{ define "main" }}
-{{ $styleGuide := readFile "files/foundation/style-guide.md" | markdownify }}
+{{ $tag        := "cncf" }}
+{{ $colors     := .Params.colors }}
+{{ $primary    := $colors.primary }}
+{{ $secondary  := $colors.secondary }}
+{{ $types      := (slice "horizontal" "icon" "stacked") }}
+{{ $colors     := (slice "color" "black" "white") }}
+{{ partial "projects/hero.html" (dict "name" .Title "description" .Params.description) }}
 
-<article class="article style-guide">
+<article class="article">
   <section class="section">
     <div class="container">
       <div class="content">
-        {{ $styleGuide }}
+        <h1 class="has-text-weight-light">
+          Colors
+        </h1>
+  
+        <div class="color-panels">
+          {{ partial "color-panel-section.html" (dict "title" "Primary" "color" $primary) }}
+          {{ partial "color-panel-section.html" (dict "title" "Secondary" "color" $secondary) }}
+        </div>
+
+        <br /><br />
+  
+        <h1 class="has-text-weight-light">
+          Logos
+        </h1>
+
+        <br />
+
+        <div class="columns is-multiline">
+          {{ range $types }}
+          {{ $type    := . }}
+          {{ $isHoriz := eq $type "horizontal" }}
+          {{ range $colors }}
+          {{ $color       := . }}
+          {{ $horizImg    := printf "img/other/cncf/%s/%s/cncf-%s.png" $type $color $color | relURL }}
+          {{ $nonHorizImg := printf "img/other/%s/%s/%s/%s-%s-%s.png" $tag $type $color $tag $type $color | relURL }}
+          {{ $img         := cond $isHoriz $horizImg $nonHorizImg }}
+          {{ $types       := (slice "png" "svg") }}
+          {{ $isWhite := eq $color "white" }}
+          <div class="column is-one-third logo-column has-text-centered">
+            <h2 class="has-text-weight-light logo-column-title">
+              {{ $type | humanize }} {{ $color }}
+            </h2>
+
+            <img class="logo {{ $type }} {{ $color }}" src="{{ $img }}">
+
+            {{ range $types }}
+            {{ $horizImg    := printf "img/other/cncf/%s/%s/cncf-%s.%s" $type $color $color . | relURL }}
+            {{ $nonHorizImg := printf "img/other/%s/%s/%s/%s-%s-%s.%s" $tag $type $color $tag $type $color . | relURL }}
+            {{ $img         := cond $isHoriz $horizImg $nonHorizImg }}
+            <nav class="level is-mobile">
+              <div class="level-left">
+                <p class="is-size-5 is-size-6-mobile has-text-weight-bold">
+                  {{ . }}
+                </p>
+              </div>
+
+              <div class="level-right">
+                <div class="buttons">
+                  <a class="button is-small has-text-weight-bold" href="{{ $img }}" style="border: 1.5px solid #{{ $primary }}; color: #{{ $primary }}; background-color: white;" download>
+                    <span class="icon">
+                      <i class="fas fa-download"></i>
+                    </span>
+                    <span>
+                      download
+                    </span>
+                  </a>
+                  <a class="button is-small has-text-weight-bold" href="{{ $img }}" style="border: 1.5px solid #{{ $primary }}; color: #{{ $primary }}; background-color: white;" target="_blank">
+                    <span class="icon">
+                      <i class="fas fa-external-link-alt"></i>
+                    </span>
+                    <span>
+                      open
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </nav>
+            {{ end }}
+          </div>
+          {{ end }}
+          {{ end }}
+        </div>
       </div>
     </div>
   </section>
