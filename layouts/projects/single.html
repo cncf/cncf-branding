@@ -64,17 +64,47 @@
           {{ $type := . }}
           {{ range $colors }}
           {{ $color := . }}
-          {{ $img := printf "img/projects/%s/%s/%s/%s-%s-%s.png" $tag $type $color $tag $type $color | relURL }}
-          {{ $url := printf "https://raw.githubusercontent.com/cncf/artwork/master/%s/%s/%s/%s-%s-%s.png" $tag $type $color $tag $type $color | relURL }}
+          {{ $img   := printf "img/projects/%s/%s/%s/%s-%s-%s.png" $tag $type $color $tag $type $color | relURL }}
+          {{ $types := (slice "png" "svg") }}
           {{ $isWhite := eq $color "white" }}
-          <div class="column is-one-third logo-column">
-            <h3 class="has-text-weight-light logo-column-title">
+          <div class="column is-one-third logo-column has-text-centered">
+            <h2 class="has-text-weight-light logo-column-title">
               {{ $type | humanize }} {{ $color }}
-            </h3>
+            </h2>
 
-            <a href="{{ $url }}" download="{{ $url }}">
-              <img class="logo {{ $type }} {{ $color }}" src="{{ $img }}">
-            </a>
+            <img class="logo {{ $type }} {{ $color }}" src="{{ $img }}">
+
+            {{ range $types }}
+            {{ $img    := printf "img/projects/%s/%s/%s/%s-%s-%s.%s" $tag $type $color $tag $type $color . | relURL }}
+            <nav class="level is-mobile">
+              <div class="level-left">
+                <p class="is-size-5 is-size-6-mobile has-text-weight-bold">
+                  {{ . }}
+                </p>
+              </div>
+
+              <div class="level-right">
+                <div class="buttons">
+                  <a class="button is-small has-text-weight-bold" href="{{ $img }}" style="border: 1.5px solid #{{ $primary }}; color: #{{ $primary }}; background-color: white;" download>
+                    <span class="icon">
+                      <i class="fas fa-download"></i>
+                    </span>
+                    <span>
+                      download
+                    </span>
+                  </a>
+                  <a class="button is-small has-text-weight-bold" href="{{ $img }}" style="border: 1.5px solid #{{ $primary }}; color: #{{ $primary }}; background-color: white;" target="_blank">
+                    <span class="icon">
+                      <i class="fas fa-external-link-alt"></i>
+                    </span>
+                    <span>
+                      open
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </nav>
+            {{ end }}
           </div>
           {{ end }}
           {{ end }}
