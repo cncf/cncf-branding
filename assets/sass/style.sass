@@ -28,6 +28,8 @@ $family-code: "{{ $monospaceFont }}", monospace
 $primary: $cncf-dark-blue
 $section-padding: 0 1.5rem
 $navbar-dropdown-arrow: $cncf-light-blue
+$link: $cncf-dark-blue
+$link-hover: $cncf-light-blue
 
 @import "bulma/sass/utilities/derived-variables"
 @import "bulma/bulma"
@@ -57,6 +59,10 @@ $navbar-dropdown-arrow: $cncf-light-blue
     margin-top: 4rem
 
 .project-card
+  &:hover
+    background-color: $white-bis
+    border: 2px solid $cncf-light-blue
+
   &-logo
     border: 1px solid red
     width: 100px
