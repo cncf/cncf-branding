@@ -6,6 +6,7 @@ baseURL = "https://cncf-branding.netlify.com"
 description = "Colors and logos for every CNCF project"
 fontAwesomeVersion = "5.3.1"
 sansSerifFont = "Open Sans"
+twitterhandle = "CloudNativeFdn"
 
 [[params.fonts]]
 name = "Open Sans"

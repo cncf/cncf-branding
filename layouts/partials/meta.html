@@ -1,2 +1,41 @@
+{{ $isHome        := .IsHome }}
+{{ $isDoc         := eq .Section "docs" }}
+{{ $description   := cond $isHome site.Params.description .Params.description }}
+{{ $pageType      := cond $isHome "website" "article" }}
+{{ $imageUrl      := "https://raw.githubusercontent.com/cncf/artwork/master/other/cncf/horizontal/color/cncf-color.png" }}
+{{ $twitterHandle := site.Params.twitterhandle }}
+{{ $favicon       := "/favicon.png" | absURL }}
+{{ $title         := cond $isHome site.Title (printf "%s project branding" .Title) }}
 <meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+{{ with $description }}
+<meta name="description" content="{{ . }}" />
+{{ end }}
+
+<!-- OpenGraph metadata-->
+<meta property="og:title" content="{{ $title }}">
+{{ if $isDoc }}
+<meta property="og:type" content="documentation">
+{{ end }}
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:locale" content="en_US">
+{{ if not $isHome }}
+<meta property="og:site_name" content="{{ site.Title }}">
+{{ end }}
+{{ with $description }}
+<meta property="og:description" content="{{ . }}">
+{{ end }}
+<meta name="og:type" content="{{ $pageType }}">
+<meta name="og:image" content="{{ $imageUrl }}">
+<meta name="og:image:alt" content="CNCF project logo">
+<meta name="og:image:type" content="image/png">
+
+
+<!-- Twitter Card metadata -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@{{ $twitterHandle }}">
+<meta name="twitter:creator" content="@{{ $twitterHandle }}">
+
+<link rel="canonical" content="{{ .Permalink }}">
+<link rel="shortcut icon" href="{{ $favicon }}">
+{{ hugo.Generator }}
