@@ -16,8 +16,9 @@ The site is automatically published via [Netlify](https://netlify.com) when chan
 
 ## Run the site locally
 
-To run the site locally, make sure you have the "extended" version of Hugo installed, then:
+To run the site locally, make sure you have the "extended" version of Hugo and [Yarn](https://yarnpkg.com) installed, then:
 
 ```bash
+make assets
 make serve
 ```

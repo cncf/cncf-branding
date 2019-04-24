@@ -1,3 +1,7 @@
+.PHONY: assets
+assets:
+	yarn
+
 generate-pages:
 	ruby scripts/generate-pages.rb
 
