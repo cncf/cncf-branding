@@ -17,10 +17,12 @@ serve: setup
 		--disableFastRender
 
 production-build: setup
-	hugo
+	hugo --verbose --verboseLog
 
 preview-build: setup
 	hugo \
 		--baseURL $(DEPLOY_PRIME_URL) \
 		--buildDrafts \
-		--buildFuture
+		--buildFuture \
+		--verbose \
+		--verboseLog
