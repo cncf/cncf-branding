@@ -67,7 +67,7 @@
           {{ $img   := printf "img/projects/%s/%s/%s/%s-%s-%s.png" $tag $type $color $tag $type $color | relURL }}
           {{ $types := (slice "png" "svg") }}
           {{ $isWhite := eq $color "white" }}
-          <div class="column is-one-third logo-column has-text-centered">
+          <div class="column is-one-third logo-column has-text-centered logo-panel">
             <h2 class="has-text-weight-light logo-column-title">
               {{ $type | humanize }} {{ $color }}
             </h2>

@@ -34,19 +34,13 @@ $link-hover: $cncf-light-blue
 @import "bulma/sass/utilities/derived-variables"
 @import "bulma/bulma"
 
-=flex
-  display: flex
-
-=row
-  +flex
-  flex-direction: row
-
-=column
-  +flex
-  flex-direction: column
-
 // Custom Sass
+@import "helpers"
 @import "project-card"
+
+.logo-panel
+  border: 1.5px solid $grey-lighter
+  padding: 1rem
 
 .page
   display: flex
@@ -74,7 +68,7 @@ $link-hover: $cncf-light-blue
   overflow-x: scroll
 
   .color-panel-section
-    border: 2px solid $grey-lighter
+    border: 1.5px solid $grey-lighter
     padding: 1rem 2rem
 
     & + .color-panel-section
@@ -94,25 +88,45 @@ $link-hover: $cncf-light-blue
       font-size: .9rem
       font-weight: 700
       color: $dark
-
+    
 .logo-column
   margin-bottom: 2rem
   padding: 1.25rem
 
 .logo
-  margin: 1rem 0 2.5rem 0
-  max-width: 20rem
+  display: block
+
+  +desktop
+    margin: 2rem auto 1.5rem auto
+  
+  +touch
+    margin: 1.5rem auto 2rem auto
+
+  &.horizontal
+    +desktop
+      width: 75%
+
+    +touch
+      width: 80%
 
   &.white
     background-color: $dark
 
   &.icon
-    width: 20%
     height: auto
 
+    +desktop
+      width: 30%
+
+    +touch
+      width: 40%
+
   &.stacked
-    max-width: 10rem
-    height: auto
+    +desktop
+      width: 50%
+
+    +touch
+      width: 50%
 
 .content
   li
