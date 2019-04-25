@@ -11,3 +11,13 @@ twitterhandle = "CloudNativeFdn"
 [[params.fonts]]
 name = "Open Sans"
 sizes = [300, 400, 600, 700]
+
+[mediaTypes."text/netlify"]
+delimiter = ""
+
+[outputFormats.REDIRECTS]
+mediaType = "text/netlify"
+baseName = "_redirects"
+
+[outputs]
+home = ["HTML", "REDIRECTS"]

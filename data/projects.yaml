@@ -232,16 +232,16 @@
   site: https://spiffe.io
   description: The Secure Production Identity Framework for Everyone
   colors:
-    primary: 04bdd9
-    secondary: bcd918
+    primary: 00beda
+    secondary: beda00
 - tag: spire
   name: SPIRE
   status: sandbox
   site: https://spiffe.io/spire
   description: The SPIFFE Runtime Environment
   colors:
-    primary: 0eb0d2
-    secondary: 99ca3e
+    primary: 00beda
+    secondary: beda00
     tertiary: 595a5c
 - tag: telepresence
   name: Telepresence

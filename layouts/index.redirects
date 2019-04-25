@@ -1,0 +1,4 @@
+{{- $projects := site.Data.projects -}}
+{{- range $projects -}}
+/{{ .tag }}     /projects/{{ .tag }}
+{{ end -}}
