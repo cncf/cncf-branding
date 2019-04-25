@@ -2,20 +2,24 @@
 {{ $link       := printf "projects/%s" .tag | relURL }}
 <a href="{{ $link }}">
   <div class="project-card">
-    <div class="image is-64x64">
-      <img src="{{ $icon }}">
+    <div class="left">
+      <div class="image is-64x64">
+        <img src="{{ $icon }}">
+      </div>
     </div>
 
-    <div class="text">
-      <p class="project-card-title is-size-4">
-        {{ .name }}
-      </p>
-
-      {{ with .description }}
-      <p class="description has-text-grey">
-        {{ . | markdownify }}
-      </p>
-      {{ end }}
+    <div class="right">
+      <div class="text">
+        <p class="project-card-title is-size-4">
+          {{ .name }}
+        </p>
+  
+        {{ with .description }}
+        <p class="description has-text-grey">
+          {{ . | markdownify }}
+        </p>
+        {{ end }}
+      </div>
     </div>
   </div>
 </a>

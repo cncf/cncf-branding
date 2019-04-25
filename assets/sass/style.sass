@@ -59,13 +59,21 @@ $link-hover: $cncf-light-blue
     margin-top: 4rem
 
 .project-card
+  justify-content: center
+
   &:hover
     border: 2px solid $cncf-light-blue
 
-  &-logo
-    border: 1px solid red
-    width: 100px
-    height: 100px
+  .left
+    flex: 1 0 0
+    display: block
+
+    &-logo
+      width: 100px
+      height: 100px
+
+  .right
+    flex: 4 0 0
 
   +row
   border: 2px solid $grey-lighter
