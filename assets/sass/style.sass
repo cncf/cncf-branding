@@ -61,16 +61,16 @@ $link-hover: $cncf-light-blue
 .project-card
   justify-content: center
 
+  &-logo
+    margin: auto auto
+    width: 80%
+    display: block
+
   &:hover
     border: 2px solid $cncf-light-blue
 
   .left
     flex: 1 0 0
-    display: block
-
-    &-logo
-      width: 100px
-      height: 100px
 
   .right
     flex: 4 0 0
@@ -81,7 +81,7 @@ $link-hover: $cncf-light-blue
   align-items: center
 
   .text
-    margin-left: 2rem
+    padding-left: 1rem
     color: $dark
 
     .project-card-title
