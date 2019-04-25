@@ -34,6 +34,20 @@ $link-hover: $cncf-light-blue
 @import "bulma/sass/utilities/derived-variables"
 @import "bulma/bulma"
 
+=flex
+  display: flex
+
+=row
+  +flex
+  flex-direction: row
+
+=column
+  +flex
+  flex-direction: column
+
+// Custom Sass
+@import "project-card"
+
 .page
   display: flex
   flex-direction: column
@@ -48,49 +62,11 @@ $link-hover: $cncf-light-blue
   p
     color: $white
 
-=row
-  display: flex
-  flex-direction: row
-
 .article
   padding-bottom: 5rem
 
   &.style-guide
     margin-top: 4rem
-
-.project-card
-  justify-content: center
-
-  &-logo
-    margin: auto auto
-    width: 80%
-    display: block
-
-  &:hover
-    border: 2px solid $cncf-light-blue
-
-  .left
-    flex: 1 0 0
-
-  .right
-    flex: 4 0 0
-
-  +row
-  border: 2px solid $grey-lighter
-  padding: 1.2rem
-  align-items: center
-
-  .text
-    padding-left: 1rem
-    color: $dark
-
-    .project-card-title
-      line-height: 120%
-      font-weight: 600
-
-    .description
-      font-size: 1rem
-      margin-top: .5rem
 
 .color-panels  
   +row

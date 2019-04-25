@@ -3,17 +3,17 @@
 <a href="{{ $link }}">
   <div class="project-card">
     <div class="left">
-      <img class="project-card-logo" src="{{ $icon }}">
+      <img class="logo" src="{{ $icon }}">
     </div>
 
     <div class="right">
       <div class="text">
-        <p class="project-card-title is-size-4">
+        <p class="project-card-title">
           {{ .name }}
         </p>
   
         {{ with .description }}
-        <p class="description has-text-grey">
+        <p class="project-card-description">
           {{ . | markdownify }}
         </p>
         {{ end }}
