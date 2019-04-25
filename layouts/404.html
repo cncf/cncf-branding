@@ -1,0 +1,47 @@
+{{ define "title" }}
+{{ site.Title }} | 404 page
+{{ end }}
+
+{{ define "main" }}
+{{ $projects  := site.Data.projects }}
+{{ $groups    := (slice "graduated" "incubating" "sandbox") }}
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <code class="title is-size-1">
+        404 Not Found
+      </code>
+    </div>
+  </div>
+</section>
+
+<article class="article">
+  <section class="section">
+    <div class="container">
+      <div class="content is-size-5 is-size-6-mobile">
+        <p>
+          We're sorry, but the page you're looking for couldn't be found. Perhaps you were looking for the <a href="/style-guide">style guide</a> or a project page:
+        </p>
+  
+        <ul>
+          <li>
+            <a href="/cncf">
+              Cloud Native Computing Foundation
+            </a>
+          </li>
+          {{ range $groups }}
+          {{ $projects := (where $projects "status" .) }}
+          {{ range sort $projects "weight" }}
+          <li>
+            <a href="/projects/{{ .tag }}">
+              {{ .name }}
+            </a>
+          </li>
+          {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </section>
+</article>
+{{ end }}
