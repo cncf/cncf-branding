@@ -91,7 +91,7 @@
 - tag: falco
   name: Falco
   status: sandbox
-  site: https://falcosecurity.org
+  site: https://falco.org
   description: Container-native runtime security
   colors:
     primary: 00b4c8
