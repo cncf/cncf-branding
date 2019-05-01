@@ -6,7 +6,7 @@
   <section class="section">
     <div class="container">
       <div class="columns">
-        <div class="column is-one-third">
+        <div class="column is-half">
           {{ partial "home/cncf-project-card" . }}
         </div>
       </div>
@@ -33,7 +33,7 @@
 
       <div class="columns is-multiline">
         {{ range sort $incubating "weight" }}
-        <div class="column is-one-third">
+        <div class="column is-one-quarter">
           {{ partial "home/project-card.html" . }}
         </div>
         {{ end }}
@@ -47,7 +47,7 @@
 
       <div class="columns is-multiline">
         {{ range sort $sandbox "weight" }}
-        <div class="column is-one-third">
+        <div class="column is-one-quarter">
           {{ partial "home/project-card.html" . }}
         </div>
         {{ end }}
