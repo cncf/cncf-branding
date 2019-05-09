@@ -178,6 +178,7 @@
   colors:
     primary: f12711
     secondary: f49918
+  reversed: true
 - tag: notary
   name: Notary
   status: incubating

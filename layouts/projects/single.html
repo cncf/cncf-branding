@@ -12,8 +12,10 @@
 {{ $secondary  := $colors.secondary }}
 {{ $tertiary   := $colors.tertiary }}
 {{ $quaternary := $colors.quaternary }}
+{{ $formats := (slice "png" "svg") }}
 {{ $types      := (slice "horizontal" "icon" "stacked") }}
 {{ $colors     := (slice "color" "black" "white") }}
+{{ $reversed   := eq $project.reversed true }}
 
 {{ $hc         := printf "img/%s/horizontal/color/%s-horizontal-color.png" $tag $tag | relURL }}
 {{ $ic         := printf "img/%s/icon/color/%s-icon-color.png" $tag $tag | relURL }}
@@ -65,7 +67,6 @@
           {{ range $colors }}
           {{ $color := . }}
           {{ $img   := printf "img/projects/%s/%s/%s/%s-%s-%s.png" $tag $type $color $tag $type $color | relURL }}
-          {{ $types := (slice "png" "svg") }}
           {{ $isWhite := eq $color "white" }}
           <div class="column is-one-third logo-column has-text-centered logo-panel">
             <h2 class="has-text-weight-light logo-column-title">
@@ -77,7 +78,7 @@
             <br />
 
             <div class="buttons is-centered">
-              {{ range $types }}
+              {{ range $formats }}
               {{ $img    := printf "img/projects/%s/%s/%s/%s-%s-%s.%s" $tag $type $color $tag $type $color . | relURL }}
               <a class="button project-button has-text-weight-bold" href="{{ $img }}" style="color: #{{ $primary }}; background-color: white;" download>
                 <span class="icon">
@@ -88,6 +89,44 @@
                 </span>
               </a>
               <a class="button project-button has-text-weight-bold" href="{{ $img }}" style="color: #{{ $primary }}; background-color: white;" target="_blank">
+                <span class="icon">
+                  <i class="fas fa-external-link-alt"></i>
+                </span>
+                <span>
+                  {{ . }}
+                </span>
+              </a>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+          {{ end }}
+
+          {{ if $reversed }}
+          {{ $types := (slice "horizontal" "icon" "stacked") }}
+          {{ range $types }}
+          {{ $type := . }}
+          {{ $img    := printf "img/projects/%s/%s/color/%s-%s-color-reversed.png" $tag $type $tag $type | relURL }}
+          <div class="column is-one-third logo-column has-text-centered logo-panel">
+            <h2 class="has-text-weight-light logo-column-title">
+              {{ $type | humanize }} color reversed
+            </h2>
+
+            <img class="logo {{ $type }} color" src="{{ $img }}">
+
+            <div class="buttons is-centered">
+              {{ range $formats }}
+              {{ $img := printf "img/projects/%s/%s/color/%s-%s-color-reversed.%s" $tag $type $tag $type . | relURL }}
+              <a class="button project-button has-text-weight-bold" href="{{ $img }}" style="color: #{{ $primary }}; background-color: white;" target="_blank">
+                <span class="icon">
+                  <i class="fas fa-download"></i>
+                </span>
+                <span>
+                  {{ . }}
+                </span>  
+              </a>
+
+              <a class="button project-button has-text-weight-bold" href="{{ $img }}" style="color: #{{ $primary }}; background-color: white;" download>
                 <span class="icon">
                   <i class="fas fa-external-link-alt"></i>
                 </span>
