@@ -170,6 +170,14 @@
     secondary: 34a574
     tertiary: 375c93
     quaternary: 8dc63f
+- tag: networkservicemesh
+  name: Network Service Mesh
+  status: sandbox
+  site: https://networkservicemesh.io
+  description: An L2/L3 service mesh for Kubernetes
+  colors:
+    primary: f12711
+    secondary: f49918
 - tag: notary
   name: Notary
   status: incubating
