@@ -178,6 +178,8 @@
   colors:
     primary: f12711
     secondary: f49918
+    tertiary: 0a50e6
+    quaternary: 0da9eb
   reversed: true
 - tag: notary
   name: Notary
