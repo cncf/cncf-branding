@@ -197,6 +197,13 @@
     primary: 7d9199
     secondary: '566366'
     tertiary: bfbfbf
+- tag: openebs
+  name: OpenEBS
+  status: sandbox
+  site: https://openebs.io
+  description: Container-attached storage
+  colors:
+    primary: f15a29
 - tag: openmetrics
   name: OpenMetrics
   status: sandbox
