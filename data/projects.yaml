@@ -212,6 +212,14 @@
   colors:
     primary: c42227
     secondary: '191919'
+- tag: opentelemetry
+  name: OpenTelemetry
+  status: sandbox
+  site: https://opentelemetry.io
+  description: Making robust, portable telemetry a built in feature of cloud-native software.
+  colors:
+    primary: f5a800
+    secondary: 425cc7
 - tag: opentracing
   name: OpenTracing
   status: incubating
