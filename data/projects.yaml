@@ -279,7 +279,7 @@
     secondary: f5a623
 - tag: tikv
   name: TiKV
-  status: sandbox
+  status: incubating
   site: https://tikv.org
   description: Distributed transactional key-value database, originally created to complement TiDB
   colors:
