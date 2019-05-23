@@ -204,6 +204,7 @@
   description: Container-attached storage
   colors:
     primary: f15a29
+    secondary: 348ebf
 - tag: openmetrics
   name: OpenMetrics
   status: sandbox
