@@ -278,6 +278,13 @@
   colors:
     primary: cf0019
     secondary: f5a623
+- tag: thanos
+  name: Thanos
+  status: sandbox
+  site: https://thanos.io
+  description: Highly available Prometheus setup with long-term storage capabilities
+  colors:
+    primary: 6d41ff
 - tag: tikv
   name: TiKV
   status: incubating
