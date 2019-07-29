@@ -127,7 +127,7 @@
   site: https://helm.sh
   description: The Kubernetes package manager
   colors:
-    primary: 277a9f
+    primary: 0f1689
 - tag: jaeger
   name: Jaeger
   status: incubating
