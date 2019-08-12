@@ -97,7 +97,6 @@
     primary: 00b4c8
 - tag: fluentd
   name: Fluentd
-  weight: 6
   status: graduated
   site: https://fluentd.org
   description: Unified logging layer
@@ -105,6 +104,14 @@
     primary: '354984'
     secondary: 3061a4
     tertiary: 589bd0
+- tag: flux
+  name: Flux CD
+  status: sandbox
+  site: https://github.com/fluxcd/flux
+  description: The GitOps operator for Kubernetes
+  colors:
+    primary: 3d6ddd
+    secondary: c3d2f4
 - tag: grpc
   name: gRPC
   status: incubating
