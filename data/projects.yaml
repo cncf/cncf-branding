@@ -106,7 +106,7 @@
     secondary: 3061a4
     tertiary: 589bd0
 - tag: flux
-  name: Flux CD
+  name: Flux
   status: sandbox
   site: https://github.com/fluxcd/flux
   description: The GitOps operator for Kubernetes
