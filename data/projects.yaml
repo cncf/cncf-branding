@@ -97,6 +97,7 @@
     primary: 00b4c8
 - tag: fluentd
   name: Fluentd
+  weight: 6
   status: graduated
   site: https://fluentd.org
   description: Unified logging layer
