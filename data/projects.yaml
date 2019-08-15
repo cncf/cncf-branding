@@ -108,7 +108,7 @@
 - tag: flux
   name: Flux
   status: sandbox
-  site: https://github.com/fluxcd/flux
+  site: https://fluxcd.io
   description: The GitOps operator for Kubernetes
   colors:
     primary: 3d6ddd
