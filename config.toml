@@ -8,10 +8,10 @@ fontAwesomeVersion = "5.3.1"
 twitterhandle = "CloudNativeFdn"
 
 [params.logos]
-navbar = "img/other/cncf/horizontal/color/cncf-color.png"
+navbar = "img/other/cncf/horizontal/white/cncf-white.png"
 
 [[params.fonts]]
-name = "Open Sans"
+name = "Noto Sans"
 sizes = [300, 400, 600, 700]
 
 [mediaTypes."text/netlify"]

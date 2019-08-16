@@ -30,6 +30,7 @@ $section-padding: 0 1.5rem
 $navbar-dropdown-arrow: $cncf-light-blue
 $link: $cncf-dark-blue
 $link-hover: $cncf-light-blue
+$navbar-dropdown-radius: none
 
 @import "bulma/sass/utilities/derived-variables"
 @import "bulma/bulma"
@@ -37,6 +38,9 @@ $link-hover: $cncf-light-blue
 // Custom Sass
 @import "helpers"
 @import "project-card"
+
+.project-group + .project-group
+  margin-top: 3rem
 
 .logo-panel
   border: 1.5px solid $grey-lighter
@@ -57,7 +61,7 @@ $link-hover: $cncf-light-blue
     color: $white
 
 .article
-  padding-bottom: 5rem
+  padding: 2rem 0 5rem 0
 
   &.style-guide
     margin-top: 4rem

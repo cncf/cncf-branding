@@ -1,72 +1,35 @@
-{{ $projects := site.Data.projects }}
-{{ $graduated  := where $projects ".status" "graduated" }}
-{{ $incubating := where $projects ".status" "incubating" }}
-{{ $sandbox    := where $projects ".status" "sandbox" }}
-{{ $archived   := where $projects ".status" "archived" }}
+{{ $projects   := site.Data.projects }}
+{{ $groups     := (slice "Graduated" "Incubating" "Sandbox" "Archived") }}
+{{ $widths     := (dict "graduated" "one-third" "incubating" "one-quarter" "sandbox" "one-quarter" "archived" "one-quarter") }}
 <article class="article">
   <section class="section">
     <div class="container">
-      <div class="columns">
-        <div class="column is-half">
-          {{ partial "home/cncf-project-card" . }}
+      <div class="project-group">
+        <div class="columns">
+          <div class="column is-half">
+            {{ partial "home/cncf-project-card" . }}
+          </div>
         </div>
       </div>
 
-      <br /><br />
+      {{ range $groups }}
+      {{ $key             := . | lower }}
+      {{ $panelWidth      := index $widths $key }}
+      {{ $projectsInGroup := where $projects ".status" $key }}
+      <div class="project-group">
+        <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
+          {{ . }} projects
+        </p>
 
-      <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
-        Graduated
-      </p>
-
-      <div class="columns is-multiline">
-        {{ range sort $graduated "weight" }}
-        <div class="column is-one-third">
-          {{ partial "home/project-card.html" . }}
+        <div class="columns is-multiline">
+          {{ range sort $projectsInGroup "weight" }}
+          <div class="column is-{{ $panelWidth }}">
+            {{ partial "home/project-card.html" . }}
+          </div>
+          {{ end }}
         </div>
-        {{ end }}
       </div>
-
-      <br /><br />
-
-      <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
-        Incubating
-      </p>
-
-      <div class="columns is-multiline">
-        {{ range sort $incubating "weight" }}
-        <div class="column is-one-quarter">
-          {{ partial "home/project-card.html" . }}
-        </div>
-        {{ end }}
-      </div>
-
-      <br /><br />
-
-      <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
-        Sandbox
-      </p>
-
-      <div class="columns is-multiline">
-        {{ range sort $sandbox "weight" }}
-        <div class="column is-one-quarter">
-          {{ partial "home/project-card.html" . }}
-        </div>
-        {{ end }}
-      </div>
-
-      <br /><br />
-
-      <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
-        Archived
-      </p>
-
-      <div class="columns is-multiline">
-        {{ range sort $archived "weight" }}
-        <div class="column is-one-quarter">
-          {{ partial "home/project-card.html" . }}
-        </div>
-        {{ end }}
-      </div>
+      {{ end }}
     </div>
   </section>
 </article>

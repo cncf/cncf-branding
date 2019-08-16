@@ -1,12 +1,12 @@
 {{ $description := site.Params.description | markdownify }}
-<section class="hero">
+<section class="hero is-medium is-primary is-bold">
   <div class="hero-body">
     <div class="container">
-      <p class="title is-size-1 is-size-2-mobile is-spaced">
+      <p class="title is-size-1 is-size-2-mobile is-spaced has-text-weight-light">
         {{ .Title }}
       </p>
 
-      <p class="subtitle is-size-3 is-size-4-mobile has-text-weight-light">
+      <p class="subtitle is-size-4 is-size-5-mobile has-text-weight-light">
         {{ $description }}
       </p>
     </div>
