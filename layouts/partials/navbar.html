@@ -1,6 +1,7 @@
 {{ $home     := site.BaseURL }}
 {{ $projects := site.Data.projects }}
 {{ $logo     := site.Params.logos.navbar | relURL }}
+{{ $groups   := (slice "Graduated" "Incubating" "Sandbox" "Archived") }}
 <nav class="navbar is-black is-fixed-top">
   <div class="container">
     <div class="navbar-brand">
@@ -17,6 +18,43 @@
 
     <div class="navbar-menu" id="navbar-menu">
       <div class="navbar-end">
+        <div class="navbar-item mega has-dropdown is-hoverable">
+          <a class="navbar-link has-text-weight-bold is-arrowless">
+            Projects
+          </a>
+
+          <div class="navbar-dropdown">
+            <div class="container">
+              <div class="columns">
+                {{ range $groups }}
+                {{ $name     := . }}
+                {{ $key      := $name | lower }}
+                {{ $this     := where $projects ".status" $key }}
+                <div class="column is-one-quarter">
+                  <div class="navbar-item is-size-4 is-size-5-mobile has-text-weight-light">
+                    {{ $name }}
+                  </div>
+
+                  <div class="dropdown-divider"></div>
+
+                  {{ range $this }}
+                  {{ $logo := printf "img/projects/%s/icon/color/%s-icon-color.png" .tag .tag | relURL }}
+                  <a class="navbar-item is-size-5 is-size-6-mobile" href="/projects/{{ .tag }}">
+                    <span class="dropdown-icon">
+                      <img src="{{ $logo }}">
+                    </span>
+                    <span>
+                      {{ .name }}
+                    </span>
+                  </a>
+                  {{ end }}
+                </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="navbar-item" href="/style-guide">
           <a class="button is-radiusless is-info has-text-weight-bold">
             <span class="icon">
