@@ -2,6 +2,7 @@
 {{ $graduated  := where $projects ".status" "graduated" }}
 {{ $incubating := where $projects ".status" "incubating" }}
 {{ $sandbox    := where $projects ".status" "sandbox" }}
+{{ $archived   := where $projects ".status" "archived" }}
 <article class="article">
   <section class="section">
     <div class="container">
@@ -47,6 +48,20 @@
 
       <div class="columns is-multiline">
         {{ range sort $sandbox "weight" }}
+        <div class="column is-one-quarter">
+          {{ partial "home/project-card.html" . }}
+        </div>
+        {{ end }}
+      </div>
+
+      <br /><br />
+
+      <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
+        Archived
+      </p>
+
+      <div class="columns is-multiline">
+        {{ range sort $archived "weight" }}
         <div class="column is-one-quarter">
           {{ partial "home/project-card.html" . }}
         </div>

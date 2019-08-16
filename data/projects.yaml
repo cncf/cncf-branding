@@ -247,7 +247,7 @@
     primary: e95224
 - tag: rkt
   name: rkt
-  status: incubating
+  status: archived
   site: https://github.com/rkt/rkt
   description: A pod-native container engine for Linux, composable, secure, and built on standards
   colors:
