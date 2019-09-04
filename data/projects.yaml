@@ -136,6 +136,14 @@
   description: The Kubernetes package manager
   colors:
     primary: 0f1689
+- tag: in-toto
+  name: in-toto
+  status: sandbox
+  site: https://in-toto.io
+  description: A framework for securing the integrity of software supply chains
+  colors:
+    primary: ed4b27
+    secondary: 3688d6
 - tag: jaeger
   name: Jaeger
   status: incubating
