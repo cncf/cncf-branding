@@ -278,6 +278,14 @@
     primary: 00beda
     secondary: beda00
     tertiary: 595a5c
+- tag: strimzi
+  name: Strimzi
+  status: sandbox
+  site: https://strimzi.io/
+  description: Apache Kafka on Kubernetes
+  colors:
+    primary: 1d2c45
+    secondary: b6ddea
 - tag: telepresence
   name: Telepresence
   status: sandbox
