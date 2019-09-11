@@ -168,6 +168,15 @@
   description: An open-source system for automating deployment, scaling, and management of containerized applications
   colors:
     primary: 326ce5
+- tag: kubevirt
+  name: KubeVirt
+  status: sandbox
+  site: https://kubevirt.io
+  description: Virtual machine management for Kubernetes
+  colors:
+    primary: 48a7b0
+    secondary: 31777e
+    tertiary: 66c9c4
 - tag: linkerd
   name: Linkerd
   status: incubating
