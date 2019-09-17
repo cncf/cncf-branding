@@ -1,27 +1,27 @@
 {{ $description := .description | markdownify }}
 {{ $btnColors   := (dict "graduated" "success" "incubating" "info" "sandbox" "warning" "cncf" "success") }}
 {{ $status      := .status }}
-<section class="hero">
+<section class="hero is-medium is-primary is-bold">
   <div class="hero-body">
     <div class="container">
-      <p class="title is-size-1 is-size-2-mobile has-text-weight-bold is-spaced">
+      <p class="title is-size-1 is-size-2-mobile is-spaced has-text-weight-light">
         {{ .name }}
 
         {{ with $status }}
-        {{ $btnColor    := index $btnColors $status }}
-        <button class="button is-small is-rounded is-{{ $btnColor }} has-text-weight-bold">
-          {{ $status }}
+        {{ $btnColor := index $btnColors . }}
+        <button class="button is-rounded is-{{ $btnColor }} has-text-weight-bold">
+          {{ . }}
         </button>
         {{ end }}
       </p>
 
       {{ with $description }}
-      <p class="subtitle is-size-3 is-size-4-mobile has-text-weight-light">
+      <p class="subtitle is-size-4 is-size-5-mobile has-text-weight-light">
         {{ . }}
       </p>
       {{ end }}
 
-      <a class="subtitle is-size-5 is-size-6-mobile has-text-grey" href="{{ .site }}" target="_blank">
+      <a class="subtitle is-size-5 is-size-6-mobile has-text-weight-bold" href="{{ .site }}" target="_blank">
         {{ .site }}
       </a>
     </div>
