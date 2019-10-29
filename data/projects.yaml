@@ -192,7 +192,7 @@
   description: Cloud native distributed block storage for Kubernetes
   colors:
     primary: 582648
-    seccondary: 3b4645
+    secondary: 3b4645
 - tag: nats
   name: NATS
   status: incubating
