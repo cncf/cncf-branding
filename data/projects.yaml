@@ -146,6 +146,7 @@
     secondary: 3688d6
 - tag: jaeger
   name: Jaeger
+  weight: 8
   status: graduated
   site: https://jaegertracing.io
   description: Open-source, end-to-end distributed tracing for monitoring and troubleshooting transactions in complex distributed systems
@@ -351,6 +352,7 @@
     secondary: 383d49
 - tag: vitess
   name: Vitess
+  weight: 8
   status: graduated
   site: https://vitess.io
   description: A database clustering system for horizontal scaling of MySQL 

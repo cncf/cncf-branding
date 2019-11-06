@@ -45,8 +45,13 @@ $navbar-dropdown-radius: none
 .navbar-item.mega
   position: static
 
-.project-group + .project-group
-  margin-top: 3rem
+.project-group
+  .title
+    font-weight: 400
+    margin-bottom: 2rem
+
+  & + &
+    margin-top: 4rem
 
 .logo-panel
   border: 1.5px solid $grey-lighter
