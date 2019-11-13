@@ -18,7 +18,7 @@
     tertiary: '252960'
 - tag: cloudevents
   name: CloudEvents
-  status: incubator
+  status: incubating
   site: https://cloudevents.io
   description: A specification for describing event data in a common way
   colors:
