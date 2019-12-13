@@ -338,7 +338,7 @@
 - tag: tuf
   name: The Update Framework
   status: incubating
-  site: https://theupdateframework.github.io
+  site: https://theupdateframework.org
   description: A framework for securing software update systems
   colors:
     primary: 0082ca
