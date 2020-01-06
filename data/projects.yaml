@@ -22,7 +22,7 @@
   site: http://chubao.io
   description: A distributed file system for cloud native applications
   colors:
-    primary: '0d55b9'
+    primary: '0d5587'
     secondary: '3c8bb9'
 - tag: cloudevents
   name: CloudEvents
