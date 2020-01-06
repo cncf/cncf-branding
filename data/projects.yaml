@@ -16,6 +16,14 @@
     primary: 47529d
     secondary: de156c
     tertiary: '252960'
+- tag: chubaofs
+  name: ChubaoFS
+  status: sandbox
+  site: http://chubao.io
+  description: A distributed file system for cloud native applications
+  colors:
+    primary: '#0d55b9'
+    secondary: '#3c8bb9'
 - tag: cloudevents
   name: CloudEvents
   status: incubating
