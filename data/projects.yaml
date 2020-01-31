@@ -107,7 +107,7 @@
   name: Fluentd
   weight: 6
   status: graduated
-  site: https://fluentd.org
+  site: https://www.fluentd.org
   description: Unified logging layer
   colors:
     primary: '354984'
