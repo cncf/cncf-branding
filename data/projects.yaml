@@ -59,7 +59,7 @@
 - tag: cortex
   name: Cortex
   status: sandbox
-  site: https://github.com/cortexproject/cortex
+  site: https://cortexmetrics.io
   description: A multitenant, horizontally scalable Prometheus as a Service
   colors:
     primary: 3b697e
