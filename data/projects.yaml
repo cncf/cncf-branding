@@ -98,7 +98,7 @@
     primary: 419eda
 - tag: falco
   name: Falco
-  status: sandbox
+  status: incubating
   site: https://falco.org
   description: Container-native runtime security
   colors:
