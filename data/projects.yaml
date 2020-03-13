@@ -162,6 +162,13 @@
     primary: 60d0e4
     secondary: 638b18
     tertiary: e1caa2
+- tag: keda
+  name: KEDA
+  status: sandbox
+  site: https://keda.sh
+  description: Event-driven autoscaling for Kubernetes
+  colors:
+    primary: 326de6
 - tag: kubeedge
   name: KubeEdge
   status: sandbox
