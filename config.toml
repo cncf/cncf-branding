@@ -23,3 +23,8 @@ baseName = "_redirects"
 
 [outputs]
 home = ["HTML", "REDIRECTS"]
+
+[[menu.main]]
+name = "Style Guide"
+url = "https://github.com/cncf/foundation/blob/master/style-guide.md"
+weight = 1
