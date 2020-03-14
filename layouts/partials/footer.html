@@ -1,0 +1,23 @@
+{{ $year := now.Year }}
+
+<div class="bg-white">
+  <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+    <div class="flex justify-center md:order-2">
+      <a href="https://twitter.com/CloudNativeFdn" class="ml-6 text-gray-400 hover:text-gray-500" target="_blank">
+        <span class="sr-only">Twitter</span>
+
+        <i class="fab fa-lg fa-twitter"></i>
+      </a>
+      <a href="https://github.com/cncf/cncf-branding" class="ml-6 text-gray-400 hover:text-gray-500" target="_blank">
+        <span class="sr-only">GitHub</span>
+        
+        <i class="fab fa-lg fa-github"></i>
+      </a>
+    </div>
+    <div class="mt-8 md:mt-0 md:order-1">
+      <p class="text-center text-base leading-6 text-gray-400">
+        &copy; {{ $year }} Cloud Native Computing Foundation
+      </p>
+    </div>
+  </div>
+</div>

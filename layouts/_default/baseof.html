@@ -13,10 +13,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.1.2/dist/alpine.js" defer></script>
   </head>
-  <body class="font-sans antialiased text-gray-800 bg-gray-100">
-    {{ partial "navbar.html" . }}
+  <body class="flex flex-col min-h-screen font-sans antialiased text-gray-800 bg-gray-100">
+    <div class="flex-grow">
+      {{ partial "navbar.html" . }}
 
-    {{ block "main" . }}
-    {{ end }}
+      {{ block "main" . }}
+      {{ end }}
+    </div>
+
+    {{ partial "footer.html" . }}
   </body>
 </html>
