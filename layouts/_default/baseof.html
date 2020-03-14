@@ -8,18 +8,15 @@
       {{ site.Title }}
       {{ end }}
     </title>
-    {{ partial "css.html" . }}
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.1.2/dist/alpine.js" defer></script>
   </head>
-  <body class="page has-navbar-fixed-top">
-    <main class="main">
-      {{ partial "navbar.html" . }}
+  <body class="font-sans antialiased text-gray-900">
+    {{ partial "navbar.html" . }}
 
-      {{ block "main" . }}
-      {{ end }}
-    </main>
-
-    {{ partial "footer.html" . }}
-
-    <!-- {{ partial "javascript.html" . }} -->
+    {{ block "main" . }}
+    {{ end }}
   </body>
 </html>

@@ -1,12 +1,14 @@
-{{ $home     := site.BaseURL }}
-{{ $projects := site.Data.projects }}
-{{ $logo     := site.Params.logos.navbar | relURL }}
-<nav class="navbar is-black is-fixed-top">
-  <div class="container">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="{{ $home }}">
-        <img src="{{ $logo }}" alt="CNCF navbar logo">
-      </a>
+{{ $title := site.Title }}
+{{ $alt   := printf "%s navbar logo" $title }}
+{{ $logo  := "/img/other/cncf/horizontal/color/cncf-color.png" }}
+<nav x-data="{ open: false }" class="bg-white shadow">
+  <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="relative flex justify-between h-16">
+      <div class="absolute inset-y-0 left-1 flex items-center sm:hidden">
+        <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-400 transition duration-150 ease-in-out">
+          <i class="fas" :class="{ 'fa-times': open, 'fa-bars': !open }"></i>
+        </button>
+      </div>
     </div>
   </div>
 </nav>
