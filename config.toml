@@ -4,7 +4,6 @@ baseURL = "https://cncf-branding.netlify.com"
 
 [params]
 description = "Colors and logos for the Cloud Native Computing Foundation and its open source projects"
-fontAwesomeVersion = "5.3.1"
 twitterhandle = "CloudNativeFdn"
 
 [params.logos]
