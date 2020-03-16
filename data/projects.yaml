@@ -302,6 +302,16 @@
   colors:
     primary: 0091bd
     secondary: 546a79
+- tag: servicemeshinterface
+  name: Service Mesh Interface
+  status: sandbox
+  site: https://smi-spec.io
+  description: A standard interface for service meshes on Kubernetes
+  colors:
+    primary: 232fdd
+    secondary: 00a9b8
+    tertiary: afefc0
+    quaternary: ff782c
 - tag: spiffe
   name: SPIFFE
   status: sandbox
