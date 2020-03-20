@@ -169,6 +169,7 @@
   description: Event-driven autoscaling for Kubernetes
   colors:
     primary: 326de6
+    secondary: 679bf0
 - tag: kubeedge
   name: KubeEdge
   status: sandbox
