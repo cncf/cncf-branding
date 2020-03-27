@@ -1,6 +1,32 @@
 {{ $description := .description | markdownify }}
-{{ $btnColors   := (dict "graduated" "success" "incubating" "info" "sandbox" "warning" "cncf" "success") }}
-{{ $status      := .status }}
+{{ $btnColors   := dict "graduated" "green-100" "incubating" "red-100" "sandbox" "blue-100" "cncf" "orange-100" }}
+{{ $status      := .status | string }}
+{{ $bgColor     := index $btnColors $status }}
+<div class="py-12 bg-white">
+  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="lg:text-center">
+      <h3 class="text-4xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl sm:leading-10">
+        {{ .name }}
+      </h3>
+      {{ with $description }}
+      <p class="py-4 max-w-4xl text-xl leading-7 text-gray-500 lg:mx-auto">
+        {{ .  }}
+      </p>
+      {{ end }}
+
+      <div class="py-3">
+        <a class="text-gray-600" href="{{ .site }}" target="_blank">
+          {{ .site }}
+        </a>
+      </div>
+
+      <span class="inline-flex items-center px-3 py-0.75 rounded-full text-xs font-medium leading-4 bg-{{ $bgColor }} text-gray-800">
+        {{ $status }}
+      </span>
+    </div>
+  </div>
+</div>
+
 <section class="hero is-medium is-primary is-bold">
   <div class="hero-body">
     <div class="container">
