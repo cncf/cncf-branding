@@ -384,3 +384,11 @@
   description: A database clustering system for horizontal scaling of MySQL 
   colors:
     primary: f16728
+- tag: volcano
+  name: Volcano
+  status: sandbox
+  site: https://volcano.sh
+  description: A Kubernetes-native batch system
+  colors:
+    primary: da3529
+    secondary: db5e34
