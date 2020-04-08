@@ -1,3 +1,10 @@
+- tag: argo
+  name: Argo
+  status: incubating
+  site: https://argoproj.github.io/argo-cd
+  description: A declarative, GitOps continuous delivery tool for Kubernetes
+  colors:
+    primary: ef7b4d
 - tag: brigade
   name: Brigade
   status: sandbox
