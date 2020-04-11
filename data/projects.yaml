@@ -1,3 +1,10 @@
+- tag: argo
+  name: Argo
+  status: incubating
+  site: https://argoproj.github.io/argo-cd
+  description: A declarative, GitOps continuous delivery tool for Kubernetes
+  colors:
+    primary: ef7b4d
 - tag: brigade
   name: Brigade
   status: sandbox
@@ -169,6 +176,7 @@
   description: Event-driven autoscaling for Kubernetes
   colors:
     primary: 326de6
+    secondary: 679bf0
 - tag: kubeedge
   name: KubeEdge
   status: sandbox
@@ -302,6 +310,16 @@
   colors:
     primary: 0091bd
     secondary: 546a79
+- tag: servicemeshinterface
+  name: Service Mesh Interface
+  status: sandbox
+  site: https://smi-spec.io
+  description: A standard interface for service meshes on Kubernetes
+  colors:
+    primary: 232fdd
+    secondary: 00a9b8
+    tertiary: afefc0
+    quaternary: ff782c
 - tag: spiffe
   name: SPIFFE
   status: sandbox
@@ -352,7 +370,7 @@
     secondary: '353558'
 - tag: tuf
   name: The Update Framework
-  status: incubating
+  status: graduated
   site: https://theupdateframework.org
   description: A framework for securing software update systems
   colors:
@@ -373,3 +391,11 @@
   description: A database clustering system for horizontal scaling of MySQL 
   colors:
     primary: f16728
+- tag: volcano
+  name: Volcano
+  status: sandbox
+  site: https://volcano.sh
+  description: A Kubernetes-native batch system
+  colors:
+    primary: da3529
+    secondary: db5e34
