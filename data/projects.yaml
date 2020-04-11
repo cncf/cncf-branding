@@ -375,6 +375,7 @@
   description: A framework for securing software update systems
   colors:
     primary: 0082ca
+  weight: 9
 - tag: virtualkubelet
   name: Virtual Kubelet
   status: sandbox
