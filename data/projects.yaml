@@ -146,7 +146,8 @@
     secondary: 4495d7
 - tag: helm
   name: Helm
-  status: incubating
+  weight: 10
+  status: graduated
   site: https://helm.sh
   description: The Kubernetes package manager
   colors:
@@ -161,7 +162,7 @@
     secondary: 3688d6
 - tag: jaeger
   name: Jaeger
-  weight: 8
+  weight: 7
   status: graduated
   site: https://jaegertracing.io
   description: Open-source, end-to-end distributed tracing for monitoring and troubleshooting transactions in complex distributed systems
@@ -389,7 +390,7 @@
   weight: 8
   status: graduated
   site: https://vitess.io
-  description: A database clustering system for horizontal scaling of MySQL 
+  description: A database clustering system for horizontal scaling of MySQL
   colors:
     primary: f16728
 - tag: volcano
