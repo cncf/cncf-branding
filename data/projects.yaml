@@ -138,7 +138,7 @@
     secondary: 5ac5c5
 - tag: harbor
   name: Harbor
-  status: incubating
+  status: graduated
   site: https://goharbor.io
   description: An open-source trusted cloud native registry project that stores, signs, and scans content
   colors:
