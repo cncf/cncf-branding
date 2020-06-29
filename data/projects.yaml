@@ -5,6 +5,20 @@
   description: A declarative, GitOps continuous delivery tool for Kubernetes
   colors:
     primary: ef7b4d
+- tag: artifacthub
+  name: Artifact Hub
+  status: sandbox
+  site: https://artifacthub.io
+  description: A web-based application for finding, installing, and publishing packages and configurations for CNCF projects
+  colors:
+    primary: 549ec0
+- tag: bfe
+  name: BFE
+  status: sandbox
+  site: https://www.bfe-networks.net
+  description: A modern layer 7 load balancer
+  colors:
+    primary: 3062e5
 - tag: brigade
   name: Brigade
   status: sandbox
@@ -78,6 +92,22 @@
   colors:
     primary: '294172'
     secondary: 3c6eb4
+- tag: crossplane
+  name: Crossplane
+  status: sandbox
+  site: https://crossplane.io/
+  description: Manage any infrastructure your application needs directly from Kubernetes
+  colors:
+    primary: ff7876
+    secondary: ffcb00
+    tertiary: 00d3b9
+- tag: dex
+  name: Dex
+  site: https://github.com/dexidp/dex
+  description: An identity service that uses OpenID Connect to drive authentication for other apps
+  colors:
+    primary: fe3855
+    secondary: 0e9fdc
 - tag: dragonfly
   name: Dragonfly
   status: sandbox
@@ -203,6 +233,15 @@
     primary: 48a7b0
     secondary: 31777e
     tertiary: 66c9c4
+- tag: kudo
+  name: KUDO
+  status: sandbox
+  site: https://kudo.dev/
+  description: The Kubernetes Universal Declarative Operator
+  colors:
+    primary: '360061'
+    secondary: 0094ff
+    tertiary: 00ceb1
 - tag: linkerd
   name: Linkerd
   status: incubating
@@ -288,6 +327,13 @@
   colors:
     primary: 0979b9
     secondary: 2592c0
+- tag: parsec
+  name: Parsec
+  status: sandbox
+  site: https://github.com/parallaxsecond/parsec
+  description: An open source initiative to provide a common API for hardware security and cryptographic services in a platform-agnostic way
+  colors:
+    primary: 26d1ff
 - tag: prometheus
   name: Prometheus
   weight: 2
