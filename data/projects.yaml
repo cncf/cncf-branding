@@ -103,6 +103,7 @@
     tertiary: 00d3b9
 - tag: dex
   name: Dex
+  status: sandbox
   site: https://github.com/dexidp/dex
   description: An identity service that uses OpenID Connect to drive authentication for other apps
   colors:
