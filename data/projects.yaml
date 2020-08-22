@@ -53,6 +53,15 @@
   colors:
     primary: '0d5587'
     secondary: '3c8bb9'
+- tag: cloudcustodian
+  name: Cloud Custodian
+  status: sandbox
+  site: https://cloudcustodian.io
+  description: A rules engine for cloud security, cost optimization, and governance
+  colors:
+    primary: 'f4c91d'
+    secondary: 'f5aa1f'
+    tertiary: '87752e'
 - tag: cloudevents
   name: CloudEvents
   status: incubating
@@ -210,6 +219,13 @@
     primary: 60d0e4
     secondary: 638b18
     tertiary: e1caa2
+- tag: k3s
+  name: K3s
+  status: sandbox
+  site: https://k3s.io
+  description: Lightweight Kubernetes
+  colors:
+    primary: 'ffc61c'
 - tag: keda
   name: KEDA
   status: sandbox
