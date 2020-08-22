@@ -40,7 +40,7 @@
 - tag: chaosmesh
   name: Chaos Mesh
   status: sandbox
-  site: https://chaos-mesh.org/
+  site: https://chaos-mesh.org
   description: A cloud-native Chaos Engineering platform that orchestrates chaos in Kubernetes environments
   colors:
     primary: '12a6f5'
@@ -336,6 +336,13 @@
   colors:
     primary: 0979b9
     secondary: 2592c0
+- tag: operatorframework
+  name: Operator Framework
+  status: incubating
+  site: https://operatorframework.io
+  description: An open source toolkit for managing Kubernetes-native applications, called Operators, in an effective, automated, and scalable way
+  colors:
+    primary: 'cc0000'
 - tag: parsec
   name: Parsec
   status: sandbox
