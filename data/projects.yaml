@@ -37,6 +37,14 @@
     primary: 47529d
     secondary: de156c
     tertiary: '252960'
+- tag: chaosmesh
+  name: Chaos Mesh
+  status: sandbox
+  site: https://chaos-mesh.org/
+  description: A cloud-native Chaos Engineering platform that orchestrates chaos in Kubernetes environments
+  colors:
+    primary: '12a6f5'
+    secondary: 'f05f7f'
 - tag: chubaofs
   name: ChubaoFS
   status: sandbox
