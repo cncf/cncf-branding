@@ -251,6 +251,13 @@
     primary: '360061'
     secondary: 0094ff
     tertiary: 00ceb1
+- tag: kuma
+  name: Kuma
+  status: sandbox
+  site: https://kuma.io
+  description: A platform-agnostic, open-source control plane for service mesh and microservices
+  colors:
+    primary: '290b53'
 - tag: linkerd
   name: Linkerd
   status: incubating
