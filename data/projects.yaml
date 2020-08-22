@@ -234,6 +234,13 @@
   colors:
     primary: 326de6
     secondary: 679bf0
+- tag: keptn
+  name: Keptn
+  status: sandbox
+  site: https://keptn.sh
+  description: An event-based control plane for continuous delivery and automated operations for cloud-native applications
+  colors:
+    primary: '006bb8'
 - tag: kubeedge
   name: KubeEdge
   status: sandbox
