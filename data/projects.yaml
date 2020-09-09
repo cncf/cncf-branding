@@ -289,6 +289,14 @@
   colors:
     primary: 2beda7
     secondary: 0592f5
+- tag: litmus
+  name: Litmus
+  status: sandbox
+  site: https://litmuschaos.io
+  description: Chaos engineering for your Kubernetes
+  colors:
+    primary: 858cdd
+    secondary: 5c44ba
 - tag: longhorn
   name: Longhorn
   status: sandbox
