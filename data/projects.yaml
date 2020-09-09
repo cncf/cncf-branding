@@ -297,6 +297,14 @@
   colors:
     primary: 582648
     secondary: 3b4645
+- tag: metal3
+  name: Metal3
+  status: sandbox
+  site: https://metal3.io
+  description: Bare metal host provisioning for Kubernetes
+  colors:
+    primary: 00eec2
+    secondary: 00d1bd
 - tag: nats
   name: NATS
   status: incubating
