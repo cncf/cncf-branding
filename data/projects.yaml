@@ -358,6 +358,13 @@
   colors:
     primary: c42227
     secondary: '191919'
+- tag: openservicemesh
+  name: Open Service Mesh
+  status: sandbox
+  site: https://openservicemesh.io
+  description: A lightweight and extensible cloud native service mesh
+  colors:
+    primary: 1128a9
 - tag: opentelemetry
   name: OpenTelemetry
   status: sandbox
