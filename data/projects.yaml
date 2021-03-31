@@ -170,7 +170,7 @@
     tertiary: 589bd0
 - tag: flux
   name: Flux
-  status: sandbox
+  status: incubating
   site: https://fluxcd.io
   description: The GitOps operator for Kubernetes
   colors:
