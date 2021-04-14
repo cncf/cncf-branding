@@ -85,6 +85,14 @@
   description: An industry-standard container runtime with an emphasis on simplicity, robustness and portability
   colors:
     primary: '575757'
+- tag: contour
+  name: Contour
+  status: incubating
+  site: https://projectcontour.io/
+  description: An open source Kubernetes ingress controller providing the control plane for the Envoy edge and service proxy.​
+  colors:
+    primary: '1b3a7c'
+    secondary: '00c7d6'
 - tag: coredns
   name: CoreDNS
   weight: 4
