@@ -166,6 +166,14 @@
   description: Container-native runtime security
   colors:
     primary: 00b4c8
+- tag: flagger
+  name: Flagger
+  status: incubating
+  site: https://flagger.app/
+  description: Progressive delivery Kubernetes operator (Canary, A/B Testing and Blue/Green deployments)
+  colors:
+    primary: 7BB09F
+    secondary: 1A1A1A
 - tag: fluentd
   name: Fluentd
   weight: 6
