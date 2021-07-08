@@ -1,3 +1,5 @@
+*This repository has become outdated so it has been archived and the site is now being redirected to the [CNCF Artwork repo](https://github.com/cncf/artwork).*
+
 # CNCF Branding
 
 This repo houses the assets used to build https://branding.cncf.io.
